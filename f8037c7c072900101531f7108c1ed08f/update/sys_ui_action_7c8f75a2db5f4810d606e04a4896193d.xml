@@ -74,8 +74,8 @@ function updateApprovalRecord() {
         var approval = new global.Approval();
         approval.ActionApprovalWithComment('rejected', comments, currentId, userId);
         //call event for send email to requester in submission ticket
-        gs.eventQueue("x_424363_ski_eva_1.submission.rejected", current, gs.getUserName(), comments);
-       
+        gs.eventQueue("x_424363_ski_eva_1.submission.rejected", current, gs.getUserDisplayName(), comments);
+
         //After updating the current page don't redirect
         action.setRedirectURL(current);
     }
@@ -90,7 +90,7 @@ function updateApprovalRecord() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7c8f75a2db5f4810d606e04a4896193d</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Reject</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
@@ -98,7 +98,7 @@ function updateApprovalRecord() {
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_ui_action_7c8f75a2db5f4810d606e04a4896193d</sys_update_name>
         <sys_updated_by>tngo44</sys_updated_by>
-        <sys_updated_on>2020-03-06 07:17:54</sys_updated_on>
+        <sys_updated_on>2020-03-10 03:19:15</sys_updated_on>
         <table>x_424363_ski_eva_1_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
