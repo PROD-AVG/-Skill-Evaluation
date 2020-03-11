@@ -27,18 +27,21 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	var grSubmission = new GlideRecord('x_424363_ski_eva_1_submission');
-	grSubmission.addQuery('assigned_to', current.assigned_to);
-	grSubmission.addQuery('state', '!=', '3');
-	grSubmission.addOrCondition('state', '!=', '4');
-	grSubmission.query();
+    var grSubmission = new GlideRecord('x_424363_ski_eva_1_submission');
 	
-	if(grSubmission.next()) {
-		current.setAbortAction(true);
-		gs.addErrorMessage('You have in-progress record(s). State is not complete.');
-	}
+    //Prevent submission a new submission when user had a submission in progress ( state!=Cancel or state!=Complete )
+    
+	grSubmission.addQuery('assigned_to', current.assigned_to);
+    var qc = grSubmission.addQuery('state', '!=', '3');
+    qc.addOrCondition('state', '!=', '4');
+    grSubmission.query();
+
+    if (grSubmission.next()) {
+        current.setAbortAction(true);
+        gs.addErrorMessage('You have in-progress record(s). State is not complete.');
+    }
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -46,15 +49,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7a0afbbe07a540101531f7108c1ed0c2</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Prevent multiple Submission in-progress</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_7a0afbbe07a540101531f7108c1ed0c2</sys_update_name>
-        <sys_updated_by>vvuong2</sys_updated_by>
-        <sys_updated_on>2020-03-06 07:45:14</sys_updated_on>
+        <sys_updated_by>tngo44</sys_updated_by>
+        <sys_updated_on>2020-03-11 04:04:35</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
