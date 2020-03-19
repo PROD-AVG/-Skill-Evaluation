@@ -12,13 +12,13 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_424363_ski_eva_1_submission</collection>
-        <condition>!current.isNewRecord() &amp;&amp; current.state == '0'</condition>
+        <condition>current.state == '0'</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>SE_Display_All_Skill_Item</name>
+        <name>Generate Skill Assessments</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -35,17 +35,17 @@
  */
 
 (function executeRule(current, previous /*null when async*/) {
-	// get whole tb - 160 records
-	var skill_tb = new GlideRecord('x_424363_ski_eva_1_skill');
-	skill_tb.query();
+	//Get all skills - 160 records
+	var grSkill = new GlideRecord('x_424363_ski_eva_1_skill');
+	grSkill.query();
 	
-	while(skill_tb.next()) {
-		// create records for 'skill_assessment' from 'skill'
-		var skillAssess_item = new GlideRecord('x_424363_ski_eva_1_skill_assessment');
-		skillAssess_item.initialize();
-		skillAssess_item.skill = skill_tb.sys_id;
-		skillAssess_item.submission = current.sys_id;
-		skillAssess_item.insert();
+	while(grSkill.next()) {
+		//Create records for 'skill_assessment' from 'skill'
+		var grSkillAssessment = new GlideRecord('x_424363_ski_eva_1_skill_assessment');
+		grSkillAssessment.initialize();
+		grSkillAssessment.skill = grSkill.sys_id;
+		grSkillAssessment.submission = current.sys_id;
+		grSkillAssessment.insert();
 	} 
 })(current, previous);
 ]]></script>
@@ -55,15 +55,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>acecfc45072500101531f7108c1ed0b9</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>SE_Display_All_Skill_Item</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Generate Skill Assessments</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Skill Evaluation 1" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Skill Evaluation 1">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_acecfc45072500101531f7108c1ed0b9</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-10 04:15:55</sys_updated_on>
+        <sys_updated_by>htruong20</sys_updated_by>
+        <sys_updated_on>2020-02-21 06:34:02</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
