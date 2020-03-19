@@ -12,15 +12,13 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_424363_ski_eva_1_submission</collection>
-        <condition/>
+        <condition>current.isNewRecord()</condition>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_424363_ski_eva_1_submission">state=0^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="0"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message><![CDATA[<p>You have in-progress record(s). State is not complete.</p>]]></message>
-        <name>SE_Create_New_Submission_Rule</name>
+        <name>Prevent multiple Submission in-progress</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,13 +29,12 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	var submission_records = new GlideRecord('x_424363_ski_eva_1_submission');
-	submission_records.addQuery('assigned_to', current.assigned_to);
-	submission_records.addQuery('state', '!=', '3');
+	var grSubmission = new GlideRecord('x_424363_ski_eva_1_submission');
+	grSubmission.addQuery('assigned_to', current.assigned_to);
+	grSubmission.addQuery('state', '!=', '3');
+	grSubmission.query();
 	
-	submission_records.query();
-	
-	if(submission_records.hasNext()) {
+	if(grSubmission.next()) {
 		current.setAbortAction(true);
 		gs.addErrorMessage('You have in-progress record(s). State is not complete.');
 	}
@@ -48,15 +45,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7a0afbbe07a540101531f7108c1ed0c2</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>SE_Create_New_Submission_Rule</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Prevent multiple Submission in-progress</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Skill Evaluation 1" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Skill Evaluation 1">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_7a0afbbe07a540101531f7108c1ed0c2</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-10 09:57:52</sys_updated_on>
+        <sys_updated_by>tngo44</sys_updated_by>
+        <sys_updated_on>2020-02-24 05:28:56</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
