@@ -7,26 +7,45 @@
     email, /* Optional GlideRecord */ email_action,
     /* Optional GlideRecord */
     event) {
-    if (current.state == '2')
-        email.setSubject('Submission ' + current.number + ' has been approved by PM');
-    else
-        email.setSubject('Submission ' + current.number + ' has been approved by COE');
-
-	template.print('<div>Hi,</div><br/>');
-	template.print('<div>Your submission has been approved.</div><br/>');
-	template.print('<div>Click here to view Submission: ${URI_REF}</div><br/>');
+    if (current.state == '2') {
+        email.setSubject('Submission ' + current.number + ' is now reviewed and approved');
+		
+        template.print('<div><strong>Hi ${assigned_to.name},</strong></div><br/>');
+        template.print('<div>Your Skill Submission ${number} is now reviewed and approved by '+event.parm2+', details below:</div><br/>');
+		
+		template.print('<div><strong>Description:</strong> ${description}</div><br/>');
+		template.print('<div><strong>Opened by:</strong> ${assigned_to.name}</div><br/>');
+		template.print('<div><strong>Approved by:</strong> '+event.parm2+' </div><br/>');
+		
+		template.print('<div><strong>CoE approval is required in order to complete a Skill Evaluation, please wait until your CoE approve your request.</strong></div><br/>');
+        template.print('<div>Any concerns or questions, should be revert back to your PM or CoE, Many thanks.</div><br/>');
+        template.print('<div><strong>Click here to view the record:</strong> ${URI_REF}</div><br/>');
+    } else {
+		email.setSubject('Skill Evaluation Submission ' + current.number + ' is now approved and completed');
+		
+        template.print('<div><strong>Hi ${assigned_to.name},</strong></div><br/>');
+        template.print('<div>Your Skill Submission ${number} is now approved by '+ event.parm2+ ' and completed, details below:</div><br/>');
+    
+		template.print('<div><strong>Description:</strong> ${description}</div><br/>');
+		template.print('<div><strong>Opened by:</strong> ${assigned_to.name}</div><br/>');
+		template.print('<div><strong>Approved by:</strong> '+event.parm2+'</div><br/>');
+		template.print('<div>Any concerns or questions should be revert back to your PM/CoE for details.</div><br/>');
+        template.print('<div>Many thank.</div><br/>');
+        template.print('<div><strong>Click here to view the record:</strong> ${URI_REF}</div><br/>');
+	}
+        
 })(current, template, email, email_action, event);]]></script>
         <sys_class_name>sys_script_email</sys_class_name>
         <sys_created_by>htruong20</sys_created_by>
         <sys_created_on>2020-02-21 09:34:57</sys_created_on>
         <sys_id>2b7ec8a2db4fc490d606e04a489619c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>submission.approved</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_email_2b7ec8a2db4fc490d606e04a489619c2</sys_update_name>
-        <sys_updated_by>htruong20</sys_updated_by>
-        <sys_updated_on>2020-02-21 09:34:57</sys_updated_on>
+        <sys_updated_by>dnguyen260</sys_updated_by>
+        <sys_updated_on>2020-03-23 07:25:10</sys_updated_on>
     </sys_script_email>
 </record_update>
