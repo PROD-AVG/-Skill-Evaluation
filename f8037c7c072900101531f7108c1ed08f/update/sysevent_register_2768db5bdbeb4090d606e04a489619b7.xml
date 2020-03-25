@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>fired when a PM/COE review, approve a submission of SE user</description>
+        <event_name>x_424363_ski_eva_1.submission.approved</event_name>
+        <fired_by>business rule</fired_by>
+        <queue/>
+        <suffix>submission.approved</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>dnguyen260</sys_created_by>
+        <sys_created_on>2020-03-20 04:45:14</sys_created_on>
+        <sys_id>2768db5bdbeb4090d606e04a489619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_424363_ski_eva_1.submission.approved</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sysevent_register_2768db5bdbeb4090d606e04a489619b7</sys_update_name>
+        <sys_updated_by>dnguyen260</sys_updated_by>
+        <sys_updated_on>2020-03-20 04:45:14</sys_updated_on>
+        <table>x_424363_ski_eva_1_submission</table>
+    </sysevent_register>
+</record_update>
