@@ -12,12 +12,13 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>sysapproval_approver</collection>
-        <condition>current.state.changesTo("rejected") &amp;&amp; current.source_table == "x_424363_ski_eva_1_submission"</condition>
-        <description>Capture the Reject Reason when PM or COE reject an submission and send email to requester.</description>
+        <condition>(current.state.changesTo("rejected") || current.state.changesTo("approved")) &amp;&amp; current.source_table == "x_424363_ski_eva_1_submission"</condition>
+        <description>Capture the Reject Reason when PM or COE reject an submission and send email to requester. In addition,  firing approved event for sending notification</description>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
-        <message/>
+        <message><![CDATA[<p> </p>
+<div id="eJOY__extension_root" style="all: unset;"> </div>]]></message>
         <name>Sync comment to submission</name>
         <order>100</order>
         <priority>100</priority>
@@ -28,34 +29,38 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-
+    // get session to check duplicate approving or rejecting
     var session = gs.getSession();
-    var isRejectSubmission = session.getClientData('isRejectSubmission');
-    //if isRejectSubmission have value so that request from the form submission,
-    //we won't do anything and will remove this value
-    if (isRejectSubmission) {
+    var isApprovalSubmission = session.getClientData('isApprovalSubmission');
+    //Ignore the action when the submission has been approved/rejected on the submission form
+    if (isApprovalSubmission) {
         var approval = new global.Approval();
-        approval.ClearSessionData("isRejectSubmission");
+        approval.ClearSessionData("isApprovalSubmission");
         return;
     }
-
-    //Get last comment
-    var comments = current.comments.getJournalEntry(1); //gets the last journal entries as a single string
-    var comment = comments.split("(" + current.comments.getLabel() + ")\n");
-    var firstComment = comment[comment.length - 1];
-    //
-
     //Get record submission 
     var submissionId = current.document_id;
     var submission = new GlideRecord("x_424363_ski_eva_1_submission");
     if (submission.get(submissionId)) {
-        //Update the comments in sysapprove to submission that link to sysapprove record
-        submission.comments = "Reason for reject : " + firstComment;
-        submission.update();
+        //Sending notification in case user approved the submission
+        if (current.state == "approved") {
+            gs.eventQueue("x_424363_ski_eva_1.submission.approved", submission, current.sys_updated_by, gs.getUserDisplayName());
+            //Updating comment and send notification in case user rejected submission 
+        } else {
+            //Get last comment
+            var comments = current.comments.getJournalEntry(1); //gets the last journal entries as a single string
+            var comment = comments.split("(" + current.comments.getLabel() + ")\n");
+            var firstComment = comment[comment.length - 1];
+            //
+            if (submission) {
+                //Update the comments in sysapprove to submission that link to sysapprove record
+                submission.comments = "Reason for reject : " + firstComment;
+                submission.update();
+            }
+            //call event for send email to requester in submission ticket
+            gs.eventQueue("x_424363_ski_eva_1.submission.rejected", submission, gs.getUserDisplayName(), firstComment + "");
+        }
     }
-
-    //call event for send email to requester in submission ticket
-    gs.eventQueue("x_424363_ski_eva_1.submission.rejected", submission, gs.getUserDisplayName(), firstComment + "");
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>tngo44</sys_created_by>
@@ -63,15 +68,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fda90f79dbdf8410d606e04a48961982</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Sync comment to submission</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_fda90f79dbdf8410d606e04a48961982</sys_update_name>
-        <sys_updated_by>tngo44</sys_updated_by>
-        <sys_updated_on>2020-03-10 03:19:38</sys_updated_on>
+        <sys_updated_by>dnguyen260</sys_updated_by>
+        <sys_updated_on>2020-03-24 07:46:06</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
