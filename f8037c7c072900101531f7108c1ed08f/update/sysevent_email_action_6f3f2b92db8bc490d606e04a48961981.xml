@@ -14,33 +14,37 @@
         <default_interval/>
         <description/>
         <digest_from/>
-        <digest_html/>
+        <digest_html><![CDATA[<p>&nbsp;</p>
+<div id="eJOY__extension_root" style="all: unset;">&nbsp;</div>]]></digest_html>
         <digest_reply_to/>
         <digest_separator_html><![CDATA[<p>&nbsp;</p>
 <hr />
-<p>&nbsp;</p>]]></digest_separator_html>
+<p>&nbsp;</p>
+<div id="eJOY__extension_root" style="all: unset;">&nbsp;</div>]]></digest_separator_html>
         <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
         <digest_subject/>
         <digest_template/>
         <digest_text/>
         <digestable>false</digestable>
-        <event_name>alm_transfer_order_line_subtask.escalati</event_name>
+        <event_name>x_424363_ski_eva_1.submission.approved</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
         <from/>
-        <generation_type>engine</generation_type>
+        <generation_type>event</generation_type>
         <importance/>
         <include_attachments>false</include_attachments>
         <item>event.parm1</item>
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Description: ${description}</p>
-<p>Assigned to: ${assigned_to}</p>
-<p>Opened by: ${opened_by}</p>
-<p>Please review and approve to complete the skill evaluation for</p>
+        <message_html><![CDATA[<p><strong>Hi,</strong></p>
+<p>Recently Skill Submission ${number} raised by ${assigned_to.name} which was already approved by ${event.parm2} is now waiting for your approval, details below:&nbsp;</p>
+<p><strong>Description: </strong>${description}<strong><br /></strong></p>
+<p><strong>Opened by: </strong>${assigned_to.name}<strong><br /></strong></p>
+<p>Please review and approve or reject this skill submission.</p>
+<p>Many thanks.</p>
 <p>Click here to view the record: ${URI_REF}</p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -55,7 +59,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Skill Evaluation Submission ${number} has been submitted for approval</subject>
+        <subject>Skill Evaluation Submission ${number} has been submitted for your approval</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>htruong20</sys_created_by>
@@ -63,15 +67,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6f3f2b92db8bc490d606e04a48961981</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Submission approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sysevent_email_action_6f3f2b92db8bc490d606e04a48961981</sys_update_name>
-        <sys_updated_by>htruong20</sys_updated_by>
-        <sys_updated_on>2020-02-21 07:18:25</sys_updated_on>
+        <sys_updated_by>dnguyen260</sys_updated_by>
+        <sys_updated_on>2020-03-24 04:44:16</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
