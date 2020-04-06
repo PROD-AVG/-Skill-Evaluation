@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_424363_ski_eva_1_skill">
+    <x_424363_ski_eva_1_skill action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_product_lines/>
+        <number>SKI0000066</number>
+        <product_line display_value="PDXC Integrations">2ebe0517db370c10d606e04a48961988</product_line>
+        <skill_description>MID File Transfer</skill_description>
+        <sys_class_name>x_424363_ski_eva_1_skill</sys_class_name>
+        <sys_created_by>tle251</sys_created_by>
+        <sys_created_on>2020-04-01 05:55:07</sys_created_on>
+        <sys_id>72abd913db770c10d606e04a48961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>tle251</sys_updated_by>
+        <sys_updated_on>2020-04-01 05:55:07</sys_updated_on>
+        <weight/>
+    </x_424363_ski_eva_1_skill>
+</record_update>
