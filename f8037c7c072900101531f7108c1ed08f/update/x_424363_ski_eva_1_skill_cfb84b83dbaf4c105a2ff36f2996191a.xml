@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_424363_ski_eva_1_skill">
+    <x_424363_ski_eva_1_skill action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_product_lines>f3f7cb43dbaf4c105a2ff36f29961925,b7f70f43dbaf4c105a2ff36f29961906,fbf70f43dbaf4c105a2ff36f29961906,33f70f43dbaf4c105a2ff36f29961907,fff70f43dbaf4c105a2ff36f29961907,7bf70f43dbaf4c105a2ff36f29961908</additional_product_lines>
+        <number>SKI0000051</number>
+        <product_line display_value="PA">4f046ddbdb770c10d606e04a48961957</product_line>
+        <skill_description>Performance Analytics Essentials</skill_description>
+        <sys_class_name>x_424363_ski_eva_1_skill</sys_class_name>
+        <sys_created_by>htruong20</sys_created_by>
+        <sys_created_on>2020-03-19 08:57:00</sys_created_on>
+        <sys_id>cfb84b83dbaf4c105a2ff36f2996191a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>tle251</sys_updated_by>
+        <sys_updated_on>2020-04-01 06:34:35</sys_updated_on>
+        <weight/>
+    </x_424363_ski_eva_1_skill>
+</record_update>
