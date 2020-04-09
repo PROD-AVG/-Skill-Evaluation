@@ -3,7 +3,18 @@
         <action_insert>false</action_insert>
         <action_update>true</action_update>
         <active>true</active>
-        <advanced_condition/>
+        <advanced_condition><![CDATA[(function() {
+	// Get the group id from system property
+	var group_id = gs.getProperty('x_424363_ski_eva_1.skill_evaluation_manager_group','');
+    var groupMember = new GlideRecord('sys_user_grmember');
+    groupMember.addQuery("user", current.assigned_to);
+	groupMember.addQuery("group", group_id);
+	groupMember.query();
+	if(groupMember.next()){
+		return false;
+	}    
+	return true;
+})();]]></advanced_condition>
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_424363_ski_eva_1_submission</collection>
@@ -50,12 +61,12 @@
 <div id="eJOY__extension_root" style="all: unset;">&nbsp;</div>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Submission submitted</name>
+        <name>Submission Normal submitted</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields/>
-        <recipient_groups name="Skill Evaluation PM">8795a6cedbc38490d606e04a48961970</recipient_groups>
+        <recipient_fields>assigned_to.manager</recipient_fields>
+        <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
@@ -69,15 +80,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a93da7dedb4bc490d606e04a489619ef</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Submission submitted</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Submission Normal submitted</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sysevent_email_action_a93da7dedb4bc490d606e04a489619ef</sys_update_name>
-        <sys_updated_by>dnguyen260</sys_updated_by>
-        <sys_updated_on>2020-03-23 08:56:20</sys_updated_on>
+        <sys_updated_by>vnguyen94</sys_updated_by>
+        <sys_updated_on>2020-04-07 09:09:50</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
