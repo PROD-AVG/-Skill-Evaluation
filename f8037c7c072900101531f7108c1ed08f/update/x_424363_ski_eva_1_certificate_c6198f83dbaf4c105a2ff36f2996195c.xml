@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_424363_ski_eva_1_certificate">
+    <x_424363_ski_eva_1_certificate action="INSERT_OR_UPDATE">
+        <certificate_abbreviation>CIS-EM</certificate_abbreviation>
+        <certificate_name>Certified Implementation Specialist - Event Management</certificate_name>
+        <number>CER0000009</number>
+        <product_line>37f70f43dbaf4c105a2ff36f29961908</product_line>
+        <sys_class_name>x_424363_ski_eva_1_certificate</sys_class_name>
+        <sys_created_by>htruong20</sys_created_by>
+        <sys_created_on>2020-03-19 08:58:34</sys_created_on>
+        <sys_id>c6198f83dbaf4c105a2ff36f2996195c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>tle251</sys_updated_by>
+        <sys_updated_on>2020-04-15 08:02:11</sys_updated_on>
+        <type_of_certification>Mainline</type_of_certification>
+    </x_424363_ski_eva_1_certificate>
+</record_update>
