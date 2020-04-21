@@ -51,7 +51,7 @@
         <group/>
         <import_table/>
         <interval>year</interval>
-        <is_published>false</is_published>
+        <is_published>true</is_published>
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
         <legend_align_columns>true</legend_align_columns>
@@ -74,7 +74,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown display_value="Resources by level">3292dbd9db941490d606e04a48961966</report_drilldown>
         <report_source display_value="Completed submissions (Submission)">f1473659db141490d606e04a4896195a</report_source>
-        <roles/>
+        <roles>public</roles>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -102,14 +102,14 @@
         <sys_created_by>tle251</sys_created_by>
         <sys_created_on>2020-04-20 05:52:59</sys_created_on>
         <sys_id>df711bd9db941490d606e04a48961978</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Resources by level</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_report_df711bd9db941490d606e04a48961978</sys_update_name>
         <sys_updated_by>tle251</sys_updated_by>
-        <sys_updated_on>2020-04-20 05:57:52</sys_updated_on>
+        <sys_updated_on>2020-04-21 04:12:45</sys_updated_on>
         <table>x_424363_ski_eva_1_submission</table>
         <title>Resources by level</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
