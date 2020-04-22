@@ -2,63 +2,78 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_424363_ski_eva_1_skill_assessment" version="2" view="RPT6d176b98db981090d606e04a489619a2">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>skill.product_line</element>
-            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="3517e7d8db981090d606e04a48961975">2745c07ddbd85490d606e04a4896196c</list_id>
+            <element>submission.assigned_to.name</element>
+            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="266295f12f9c18500e5f49e72799b6a3">2745c07ddbd85490d606e04a4896196c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-21 04:17:51</sys_created_on>
-            <sys_id>ef45c07ddbd85490d606e04a4896196c</sys_id>
+            <sys_created_on>2020-04-22 09:29:25</sys_created_on>
+            <sys_id>d1369a42db94d490d606e04a489619f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-21 04:17:51</sys_updated_on>
+            <sys_updated_on>2020-04-22 09:29:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>skill.skill_description</element>
-            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="3517e7d8db981090d606e04a48961975">2745c07ddbd85490d606e04a4896196c</list_id>
+            <element>skill.product_line</element>
+            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="266295f12f9c18500e5f49e72799b6a3">2745c07ddbd85490d606e04a4896196c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-21 04:17:51</sys_created_on>
-            <sys_id>6345c07ddbd85490d606e04a4896196d</sys_id>
+            <sys_created_on>2020-04-22 09:29:25</sys_created_on>
+            <sys_id>59369a42db94d490d606e04a489619f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-21 04:17:51</sys_updated_on>
+            <sys_updated_on>2020-04-22 09:29:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>proficiency_level</element>
-            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="3517e7d8db981090d606e04a48961975">2745c07ddbd85490d606e04a4896196c</list_id>
+            <element>skill.skill_description</element>
+            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="266295f12f9c18500e5f49e72799b6a3">2745c07ddbd85490d606e04a4896196c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-21 04:17:51</sys_created_on>
-            <sys_id>e345c07ddbd85490d606e04a4896196d</sys_id>
+            <sys_created_on>2020-04-22 09:29:25</sys_created_on>
+            <sys_id>d9369a42db94d490d606e04a489619f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-21 04:17:51</sys_updated_on>
+            <sys_updated_on>2020-04-22 09:29:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>submission.assigned_to.manager</element>
-            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="3517e7d8db981090d606e04a48961975">2745c07ddbd85490d606e04a4896196c</list_id>
+            <element>proficiency_level</element>
+            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="266295f12f9c18500e5f49e72799b6a3">2745c07ddbd85490d606e04a4896196c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-21 04:17:51</sys_created_on>
-            <sys_id>6745c07ddbd85490d606e04a4896196d</sys_id>
+            <sys_created_on>2020-04-22 09:29:25</sys_created_on>
+            <sys_id>5d369a42db94d490d606e04a489619f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-21 04:17:51</sys_updated_on>
+            <sys_updated_on>2020-04-22 09:29:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>submission.assigned_to.manager</element>
+            <list_id display_value="x_424363_ski_eva_1_skill_assessment" element="NULL" name="x_424363_ski_eva_1_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="266295f12f9c18500e5f49e72799b6a3">2745c07ddbd85490d606e04a4896196c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>dnguyen260</sys_created_by>
+            <sys_created_on>2020-04-22 09:29:25</sys_created_on>
+            <sys_id>dd369a42db94d490d606e04a489619f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dnguyen260</sys_updated_by>
+            <sys_updated_on>2020-04-22 09:29:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -72,7 +87,7 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-21 04:17:51</sys_created_on>
+            <sys_created_on>2020-04-22 09:29:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>2745c07ddbd85490d606e04a4896196c</sys_id>
@@ -83,9 +98,9 @@
             <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
             <sys_update_name>sys_ui_list_x_424363_ski_eva_1_skill_assessment_RPT6d176b98db981090d606e04a489619a2</sys_update_name>
             <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-21 04:17:51</sys_updated_on>
+            <sys_updated_on>2020-04-22 09:29:25</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt6d176b98db981090d606e04a489619a2" name="RPT6d176b98db981090d606e04a489619a2">3517e7d8db981090d606e04a48961975</view>
+            <view display_value="Rpt6d176b98db981090d606e04a489619a2" name="RPT6d176b98db981090d606e04a489619a2">266295f12f9c18500e5f49e72799b6a3</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>
