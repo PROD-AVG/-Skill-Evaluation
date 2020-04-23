@@ -31,11 +31,22 @@
  * Description:
  *  Create new data for 'skill_assessment' from 'skill' 
  *  Load data from 'skill_assessment' tb to related list on 'submission'
- *
+ *  Update skills which are approved earlier
  */
 
 (function executeRule(current, previous /*null when async*/) {
-	//Get all skills - 160 records
+	var submission_id = '';
+	// Get the lastest user's Completed submission
+	var submission = new GlideRecord('x_424363_ski_eva_1_submission');
+	submission.addQuery('assigned_to', current.assigned_to.sys_id);
+	submission.addQuery('state', 3);
+	submission.addQuery('valid', true);	
+	submission.query();
+	if(submission.next()){
+		submission_id = submission.sys_id;
+	}
+	
+	//Get all skills
 	var grSkill = new GlideRecord('x_424363_ski_eva_1_skill');
 	grSkill.query();
 	
@@ -45,6 +56,24 @@
 		grSkillAssessment.initialize();
 		grSkillAssessment.skill = grSkill.sys_id;
 		grSkillAssessment.submission = current.sys_id;
+		
+		// Update skills info with approved status from previous submission if available
+		if(submission_id) {
+			var grSkAsmt =  new GlideRecord('x_424363_ski_eva_1_skill_assessment');
+			grSkAsmt.addQuery('submission', submission_id);
+			grSkAsmt.addQuery('skill', grSkill.sys_id);
+			grSkAsmt.addQuery('status', 3);
+			grSkAsmt.query();
+			
+			if(grSkAsmt.next()) {
+				for (var field in grSkAsmt) {
+					if(field != 'skill' && field != 'submission') {
+						grSkillAssessment.setValue(field, grSkAsmt.getValue(field));
+					}
+				}
+			}
+		}
+		
 		grSkillAssessment.insert();
 	} 
 })(current, previous);
@@ -55,15 +84,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>acecfc45072500101531f7108c1ed0b9</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Generate Skill Assessments</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_acecfc45072500101531f7108c1ed0b9</sys_update_name>
-        <sys_updated_by>htruong20</sys_updated_by>
-        <sys_updated_on>2020-02-21 06:34:02</sys_updated_on>
+        <sys_updated_by>vnguyen94</sys_updated_by>
+        <sys_updated_on>2020-04-23 10:53:43</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
