@@ -74,7 +74,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown display_value="Product line Experienced Employees">6d176b98db981090d606e04a489619a2</report_drilldown>
         <report_source display_value="Experienced Employees (Skill Assessment)">3bf77e4cdb94dc50d606e04a4896199b</report_source>
-        <roles>public,public,public</roles>
+        <roles>public,public</roles>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -97,19 +97,19 @@
         <source_type>source</source_type>
         <start_time/>
         <style_config/>
-        <sumfield>submission.assigned_to</sumfield>
+        <sumfield>submission.assigned_to.sys_id</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>dnguyen260</sys_created_by>
         <sys_created_on>2020-04-16 08:50:32</sys_created_on>
         <sys_id>51c3db44db58dc50d606e04a489619a6</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Experienced Employees</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_report_51c3db44db58dc50d606e04a489619a6</sys_update_name>
         <sys_updated_by>dnguyen260</sys_updated_by>
-        <sys_updated_on>2020-04-22 09:28:00</sys_updated_on>
+        <sys_updated_on>2020-04-24 02:45:49</sys_updated_on>
         <table>x_424363_ski_eva_1_skill_assessment</table>
         <title>Experienced Employees</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
