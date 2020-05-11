@@ -13,13 +13,16 @@ gr.query();
 answer = gr.hasNext();]]></query_from>
         <query_with><![CDATA[(function refineQuery(current, parent) {
 
-    //Show all Skill Assessments in 'Draft' state. Otherwise, only show the Skill Assessments that is not (New & N/A)
+    //Show all Skill Assessments in 'Draft' state. 
+	//Only show the Skill Assessments which are not 'Approved' for COE/PM in 'submitted', 'reviewed' state
+	//Show all Skill that have proficiency_level != 0 in 'Completed','Cancelled' state
     if (parent.state == '0') {
 		current.addQuery('submission', parent.sys_id);
+    } else if((parent.state == '1' || parent.state=="2") && gs.hasRole('x_424363_ski_eva_1.se_admin')) {
+		current.addQuery('status!=3^proficiency_level!=0^submission=' + parent.sys_id);
     } else {
-		current.addQuery('status=1^proficiency_level!=0^submission=' + parent.sys_id + '^NQstatus!=1^submission=' + parent.sys_id);
-    }
-
+		current.addQuery('proficiency_level!=0^submission=' + parent.sys_id);
+	}
 })(current, parent);]]></query_with>
         <reference_field>skill</reference_field>
         <related_list/>
@@ -28,14 +31,14 @@ answer = gr.hasNext();]]></query_from>
         <sys_created_by>knguyen216</sys_created_by>
         <sys_created_on>2020-02-25 04:21:44</sys_created_on>
         <sys_id>0b0b232fdb4b0c90d606e04a48961926</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Skill Assessments</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_relationship_0b0b232fdb4b0c90d606e04a48961926</sys_update_name>
-        <sys_updated_by>vnguyen94</sys_updated_by>
-        <sys_updated_on>2020-04-23 14:18:37</sys_updated_on>
+        <sys_updated_by>dnguyen260</sys_updated_by>
+        <sys_updated_on>2020-05-07 10:14:25</sys_updated_on>
     </sys_relationship>
     <sys_translated_text action="delete_multiple" query="documentkey=0b0b232fdb4b0c90d606e04a48961926"/>
 </record_update>
