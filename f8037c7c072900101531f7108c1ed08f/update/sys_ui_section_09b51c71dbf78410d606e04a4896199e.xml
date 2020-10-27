@@ -2,12 +2,12 @@
     <sys_ui_section caption="Instructions" section_id="09b51c71dbf78410d606e04a4896199e" sys_domain="global" table="x_424363_ski_eva_1_submission" version="3" view="">
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
-            <sys_created_by>tle251</sys_created_by>
-            <sys_created_on>2020-05-08 07:18:23</sys_created_on>
-            <sys_id>b5a158d3db285c10d606e04a489619e1</sys_id>
+            <sys_created_by>tnguyen592</sys_created_by>
+            <sys_created_on>2020-10-15 09:51:12</sys_created_on>
+            <sys_id>9003fc72db375050d606e04a489619a6</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>tle251</sys_updated_by>
-            <sys_updated_on>2020-05-08 07:18:23</sys_updated_on>
+            <sys_updated_by>tnguyen592</sys_updated_by>
+            <sys_updated_on>2020-10-15 09:51:12</sys_updated_on>
             <text>&lt;html&gt;&#13;
 &lt;body&gt;&#13;
 &lt;p&gt;Definition of "Proficiency Level" in Skill Assessment related list:&lt;/p&gt;&#13;
@@ -22,16 +22,16 @@
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>b5a158d3db285c10d606e04a489619e1</element>
+            <element>9003fc72db375050d606e04a489619a6</element>
             <position>0</position>
-            <sys_created_by>tle251</sys_created_by>
-            <sys_created_on>2020-05-08 07:18:23</sys_created_on>
-            <sys_id>71a158d3db285c10d606e04a489619e5</sys_id>
+            <sys_created_by>tnguyen592</sys_created_by>
+            <sys_created_on>2020-10-15 09:51:12</sys_created_on>
+            <sys_id>d803fc72db375050d606e04a489619ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Instructions" display_value="Instructions" name="x_424363_ski_eva_1_submission" sys_domain="global" view="Default view">09b51c71dbf78410d606e04a4896199e</sys_ui_section>
-            <sys_updated_by>tle251</sys_updated_by>
-            <sys_updated_on>2020-05-08 07:18:23</sys_updated_on>
+            <sys_updated_by>tnguyen592</sys_updated_by>
+            <sys_updated_on>2020-10-15 09:51:12</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
