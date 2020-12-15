@@ -29,25 +29,25 @@
         <onclick>onReject()</onclick>
         <order>400</order>
         <script><![CDATA[function onReject() {
-    if (g_form.getValue('comments') == '') {
-        //Display the selected section
-        g_tabs2Sections.setActive(1);
+	if (g_form.getValue('comments') == '') {
+		//Display the selected section
+		g_tabs2Sections.setActive(1);
 
-        //Remove any existing field message, set comments mandatory, and show a new field message
-        g_form.hideFieldMsg('comments');
-        g_form.setMandatory('comments', true);
-        g_form.showFieldMsg('comments', 'Comments are mandatory when rejecting an Submission.', 'error');
-        return false; //Abort submission
-    }
-    g_form.setValue("comments", "Reason for reject : " + g_form.getValue("comments"));
-    gsftSubmit(null, g_form.getFormElement(), 'btn_Reject');
+		//Remove any existing field message, set comments mandatory, and show a new field message
+		g_form.hideFieldMsg('comments');
+		g_form.setMandatory('comments', true);
+		g_form.showFieldMsg('comments', 'Comments are mandatory when rejecting an Submission.', 'error');
+		return false; //Abort submission
+	}
+	g_form.setValue("comments", "Reason for reject : " + g_form.getValue("comments"));
+	gsftSubmit(null, g_form.getFormElement(), 'btn_Reject');
 }
 
 
 //Code that runs without 'onclick'
 //Ensure call to server-side function with no browser errors
 if (typeof window == 'undefined') {
-    updateApprovalRecord();
+	updateApprovalRecord();
 }
 
 
@@ -58,30 +58,48 @@ if (typeof window == 'undefined') {
  */
 function updateApprovalRecord() {
 
-    var comments = current.comments;
+	var comments = current.comments;
 
-    //We need a pure comment without "Reason for reject : " for send email 
-    comments = comments.substring("Reason for reject : ".length);
+	//We need a pure comment without "Reason for reject : " for send email 
+	comments = comments.substring("Reason for reject : ".length);
 
-    current.update();
+	current.update();
 
 
-    if (!current.isActionAborted()) {
+	if (!current.isActionAborted()) {
 
-        var currentId = current.getValue('sys_id');
-        var userId = gs.getUserID();
+		var currentId = current.getValue('sys_id');
+		var userId = gs.getUserID();
 
-        var session = gs.getSession();
-        session.putClientData('isApprovalSubmission', 'true');
+		var session = gs.getSession();
+		session.putClientData('isApprovalSubmission', 'true');
 
-        var approval = new global.Approval();
-        approval.ActionApprovalWithComment('rejected', comments, currentId, userId);
-        //call event for send email to requester in submission ticket
-        gs.eventQueue("x_424363_ski_eva_1.submission.rejected", current, gs.getUserDisplayName(), comments);
+		var approval = new global.Approval();
+		approval.ActionApprovalWithComment('rejected', comments, currentId, userId);
+		//call event for send email to requester in submission ticket
+		gs.eventQueue("x_424363_ski_eva_1.submission.rejected", current, gs.getUserDisplayName(), comments);
 
-        //After updating the current page don't redirect
-        action.setRedirectURL(current);
-    }
+		// After updating the current page , redirect to next record if any
+		// Otherwise, stay at current
+		var nextSubmission = findNextOfCurrent(current);
+		if(nextSubmission == null)
+			action.setRedirectURL(current);
+		else
+			action.setRedirectURL(nextSubmission);
+	}
+}
+
+function findNextOfCurrent(current){
+	var nextSubGr = new GlideRecord('x_424363_ski_eva_1_submission');		
+	nextSubGr.addQuery('number','>',current.number);	
+	nextSubGr.orderBy('number');
+	nextSubGr.query();
+	while(nextSubGr.next()){		
+		if((new global.Approval()).CheckIsRequestedSM(nextSubGr.sys_id))
+			return nextSubGr;		
+	}	
+	gs.addInfoMessage('You have reached the last submission for approval!');
+	return null;
 }]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -93,15 +111,15 @@ function updateApprovalRecord() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7c8f75a2db5f4810d606e04a4896193d</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Reject</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_ui_action_7c8f75a2db5f4810d606e04a4896193d</sys_update_name>
-        <sys_updated_by>dnguyen260</sys_updated_by>
-        <sys_updated_on>2020-05-27 05:09:48</sys_updated_on>
+        <sys_updated_by>THOANG44</sys_updated_by>
+        <sys_updated_on>2020-12-11 06:01:53</sys_updated_on>
         <table>x_424363_ski_eva_1_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
