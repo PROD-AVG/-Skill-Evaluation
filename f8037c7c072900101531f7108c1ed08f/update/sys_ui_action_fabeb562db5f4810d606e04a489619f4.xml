@@ -2,7 +2,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>btn_approve</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
@@ -26,42 +26,61 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Approve</name>
-        <onclick/>
+        <onclick>approve()</onclick>
         <order>300</order>
-        <script><![CDATA[current.update();
-if (!current.isActionAborted()) {
-	
-    var currentId = current.getValue('sys_id');
-    var userId = gs.getUserID();
-	// check if submission is approved for bussiness rule 'Sync comment to submission'
-	var session = gs.getSession();
-    session.putClientData('isApprovalSubmission', 'true');
-    //Query to table sysapproval_approver find record have Approving data is this submission and approver is login user then we will change state to approve
-    var approval = new global.Approval();
-    approval.ActionApproval('approved', currentId, userId);
-	//firing approved event for sending notification
-	gs.eventQueue("x_424363_ski_eva_1.submission.approved", current, current.sys_updated_by, gs.getUserDisplayName());
-    // After updating the current page , redirect to next record if any
-	// Otherwise, stay at current
-	var nextSubmission = findNextOfCurrent(current);
-	if(nextSubmission == null)
-		action.setRedirectURL(current);
-	else
-		action.setRedirectURL(nextSubmission);
+        <script><![CDATA[function approve(){
+	// check something
+	if(g_scratchpad.rejectedSkillsCount > 0) {
+		//Display the selected section
+		g_tabs2Sections.setActive(1);
+
+		//Remove any existing field message, set comments mandatory, and show a new field message
+		g_form.hideFieldMsg('comments');
+		g_form.setMandatory('comments', true);
+		g_form.showFieldMsg('comments', 'Comments are mandatory when there\'s any skill rejected in an Submission.', 'error');		
+	}
+	gsftSubmit(null, g_form.getFormElement(), "btn_approve");
 }
 
-function findNextOfCurrent(current){
-	var nextSubGr = new GlideRecord('x_424363_ski_eva_1_submission');		
-	nextSubGr.addQuery('number','>',current.number);	
-	nextSubGr.orderBy('number');
-	nextSubGr.query();
-	while(nextSubGr.next()){		
-		if((new global.Approval()).CheckIsRequestedSM(nextSubGr.sys_id))
-			return nextSubGr;		
-	}	
-	gs.addInfoMessage('You have reached the last submission for approval!');
-	return null;
-}]]></script>
+if (typeof window == 'undefined'){
+	current.update();
+	if (!current.isActionAborted()) {
+
+		var currentId = current.getValue('sys_id');
+		var userId = gs.getUserID();
+		// check if submission is approved for bussiness rule 'Sync comment to submission'
+		var session = gs.getSession();
+		session.putClientData('isApprovalSubmission', 'true');
+		//Query to table sysapproval_approver find record have Approving data is this submission and approver is login user then we will change state to approve
+		var approval = new global.Approval();
+		approval.ActionApproval('approved', currentId, userId);
+		//firing approved event for sending notification
+		gs.eventQueue("x_424363_ski_eva_1.submission.approved", current, current.sys_updated_by, gs.getUserDisplayName());
+		// After updating the current page , redirect to next record if any
+		// Otherwise, stay at current
+		var nextSubmission = findNextOfCurrent(current);
+		if(nextSubmission == null)
+			action.setRedirectURL(current);
+		else
+			action.setRedirectURL(nextSubmission);
+	}
+
+	function findNextOfCurrent(current){
+		var nextSubGr = new GlideRecord('x_424363_ski_eva_1_submission');		
+		nextSubGr.addQuery('number','>',current.number);	
+		nextSubGr.orderBy('number');
+		nextSubGr.query();
+		while(nextSubGr.next()){		
+			if((new global.Approval()).CheckIsRequestedSM(nextSubGr.sys_id))
+				return nextSubGr;		
+		}	
+		gs.addInfoMessage('You have reached the last submission for approval!');
+		return null;
+	}
+}
+
+
+]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -72,7 +91,7 @@ function findNextOfCurrent(current){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fabeb562db5f4810d606e04a489619f4</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
@@ -80,7 +99,7 @@ function findNextOfCurrent(current){
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_ui_action_fabeb562db5f4810d606e04a489619f4</sys_update_name>
         <sys_updated_by>THOANG44</sys_updated_by>
-        <sys_updated_on>2020-12-11 06:01:45</sys_updated_on>
+        <sys_updated_on>2020-12-17 04:21:40</sys_updated_on>
         <table>x_424363_ski_eva_1_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
