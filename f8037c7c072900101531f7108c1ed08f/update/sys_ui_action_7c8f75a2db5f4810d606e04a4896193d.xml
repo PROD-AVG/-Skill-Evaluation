@@ -81,7 +81,7 @@ function updateApprovalRecord() {
 
 		// After updating the current page , redirect to next record if any
 		// Otherwise, stay at current
-		var nextSubmission = findNextOfCurrent(current);
+		var nextSubmission = (new global.Approval()).nextSubmisionRecord_SE(current);
 		if(nextSubmission == null)
 			action.setRedirectURL(current);
 		else
@@ -89,18 +89,7 @@ function updateApprovalRecord() {
 	}
 }
 
-function findNextOfCurrent(current){
-	var nextSubGr = new GlideRecord('x_424363_ski_eva_1_submission');		
-	nextSubGr.addQuery('number','>',current.number);	
-	nextSubGr.orderBy('number');
-	nextSubGr.query();
-	while(nextSubGr.next()){		
-		if((new global.Approval()).CheckIsRequestedSM(nextSubGr.sys_id))
-			return nextSubGr;		
-	}	
-	gs.addInfoMessage('You have reached the last submission for approval!');
-	return null;
-}]]></script>
+]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -111,15 +100,15 @@ function findNextOfCurrent(current){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7c8f75a2db5f4810d606e04a4896193d</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Reject</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_ui_action_7c8f75a2db5f4810d606e04a4896193d</sys_update_name>
-        <sys_updated_by>THOANG44</sys_updated_by>
-        <sys_updated_on>2020-12-11 06:01:53</sys_updated_on>
+        <sys_updated_by>thoang44</sys_updated_by>
+        <sys_updated_on>2020-12-21 09:06:07</sys_updated_on>
         <table>x_424363_ski_eva_1_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
