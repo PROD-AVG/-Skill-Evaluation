@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sysauto_script action="INSERT_OR_UPDATE">
+<active>true</active>
+<condition/>
+<conditional>false</conditional>
+<name>Clean up all invalid requests OOO</name>
+<run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+<run_as_tz/>
+<run_dayofmonth>1</run_dayofmonth>
+<run_dayofweek>1</run_dayofweek>
+<run_period/>
+<run_start>2021-02-02 08:46:07</run_start>
+<run_time>1969-12-31 17:00:00</run_time>
+<run_type>on_demand</run_type>
+<script><![CDATA[// Left company
+var ga = new GlideRecord('u_ooo_request');
+ga.addEncodedQuery('u_requester.active=false^u_requested_for_userISEMPTY');
+ga.query();
+while (ga.next()) {
+    delApprovalRec(ga.sys_id);
+    delOOOApproved(ga.sys_id);
+
+    ga.deleteRecord();
+}
+
+// Request out-of-dated:
+// Requests still open, not yet been rejected or approved and days off in the past.
+ga = new GlideRecord('u_ooo_request');
+ga.addEncodedQuery('u_state=waiting_for_approval^ORu_state=draft');
+ga.query();
+while (ga.next()) {
+    delOutOfDateRequest(ga);
+}
+
+// Clean up request in cancelled state
+ga = new GlideRecord('u_ooo_request');
+ga.addQuery('u_state', 'cancelled');
+ga.query();
+while (ga.next()) {
+    delCancelledRequest(ga);
+}
+
+// ===============================================
+function delApprovalRec(id) {
+    var approvalRec = new GlideRecord('sysapproval_approver');
+    approvalRec.addQuery('document_id', id);
+    approvalRec.query();
+
+    while (approvalRec.next()) {
+        approvalRec.deleteRecord();
+    }
+}
+
+// ===============================================
+function delOOOApproved(id) {
+    var oooApproval = new GlideRecord('u_out_of_office_approved');
+    oooApproval.addQuery('u_ticket_number', id);
+    oooApproval.query();
+
+    while (oooApproval.next()) {
+        oooApproval.deleteRecord();
+    }
+}
+
+// ===============================================
+function delOutOfDateRequest(id) {
+    var multiRowQuestionAnswer = new GlideRecord('sc_multi_row_question_answer');
+    multiRowQuestionAnswer.addEncodedQuery('item_option_new=dabe32acdb72cc10d606e04a489619e5^ORitem_option_new=ddfe7a6cdb72cc10d606e04a4896195f^parent_id=' + id.sys_id);
+    multiRowQuestionAnswer.orderBy('item_option_new');
+    multiRowQuestionAnswer.query();
+
+    var count = 0;
+    var currentDate = new GlideDateTime().getDate();
+    var rowCount = multiRowQuestionAnswer.getRowCount();
+    while (multiRowQuestionAnswer.next()) {
+        var gdt = new GlideDateTime(multiRowQuestionAnswer.value);
+
+        if (gdt.getDate() < currentDate) {
+            delApprovalRec(id);
+            multiRowQuestionAnswer.deleteRecord();
+
+            count = count + 1;
+            if (count == rowCount) {
+                id.deleteRecord();
+            }
+        }
+    }
+}
+
+// ===============================================
+function delCancelledRequest(id) {
+    var multiRowQuestionAnswer = new GlideRecord('sc_multi_row_question_answer');
+    multiRowQuestionAnswer.addEncodedQuery('item_option_new=dabe32acdb72cc10d606e04a489619e5^ORitem_option_new=ddfe7a6cdb72cc10d606e04a4896195f^parent_id=' + id.sys_id);
+    multiRowQuestionAnswer.orderBy('item_option_new');
+    multiRowQuestionAnswer.query();
+
+    var count = 0;
+    var rowCount = multiRowQuestionAnswer.getRowCount();
+    while (multiRowQuestionAnswer.next()) {
+        delApprovalRec(id);
+        multiRowQuestionAnswer.deleteRecord();
+
+        count = count + 1;
+        if (count == rowCount) {
+            id.deleteRecord();
+        }
+    }
+}]]></script>
+<sys_class_name>sysauto_script</sys_class_name>
+<sys_created_by>KPHAM33</sys_created_by>
+<sys_created_on>2021-02-02 08:46:24</sys_created_on>
+<sys_id>27f24f06db826010d606e04a48961939</sys_id>
+<sys_mod_count>13</sys_mod_count>
+<sys_name>Clean up all invalid requests OOO</sys_name>
+<sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+<sys_policy/>
+<sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+<sys_update_name>sysauto_script_27f24f06db826010d606e04a48961939</sys_update_name>
+<sys_updated_by>ddo9</sys_updated_by>
+<sys_updated_on>2021-02-20 07:22:25</sys_updated_on>
+<upgrade_safe>false</upgrade_safe>
+</sysauto_script>
+</record_update>
