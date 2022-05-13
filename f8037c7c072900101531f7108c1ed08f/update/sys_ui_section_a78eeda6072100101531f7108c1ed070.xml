@@ -112,6 +112,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>capability</element>
+            <position>8</position>
+            <sys_created_by>QTRAN43</sys_created_by>
+            <sys_created_on>2022-05-13 07:15:30</sys_created_on>
+            <sys_id>798951f79757cd507fd7f97e6253af8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_424363_ski_eva_1_certificate" sys_domain="global" view="Default view">a78eeda6072100101531f7108c1ed070</sys_ui_section>
+            <sys_updated_by>QTRAN43</sys_updated_by>
+            <sys_updated_on>2022-05-13 07:15:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
