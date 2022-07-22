@@ -61,9 +61,9 @@
         <sys_mod_count>14</sys_mod_count>
         <sys_name>SE_Certificate_Unique</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Skill Evaluation 1" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Skill Evaluation 1">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_b686c62207a100101531f7108c1ed082</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2019-12-16 08:26:11</sys_updated_on>
