@@ -25,14 +25,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-03 14:34:47</sys_created_on>
         <sys_id>25c3913007e900101531f7108c1ed0b2</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Skill Assessment</sys_name>
-        <sys_package display_value="Skill Evaluation 1" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Skill Evaluation 1">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_db_object_25c3913007e900101531f7108c1ed0b2</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-05 07:19:22</sys_updated_on>
+        <sys_updated_by>vnguyen94</sys_updated_by>
+        <sys_updated_on>2020-04-23 08:41:48</sys_updated_on>
         <update_access>true</update_access>
         <user_role display_value="x_424363_ski_eva_1.se_admin" name="x_424363_ski_eva_1.se_admin">4a1370bc072900101531f7108c1ed0e1</user_role>
         <ws_access>true</ws_access>
