@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="DXCV ServiceNow Experienced Employees">54265996977895507fd7f97e6253afc3</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>QTRAN43</sys_created_by>
+        <sys_created_on>2022-07-22 04:43:57</sys_created_on>
+        <sys_id>1c265996977895507fd7f97e6253afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>54265996977895507fd7f97e6253afc3</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_report_users_groups_1c265996977895507fd7f97e6253afc3</sys_update_name>
+        <sys_updated_by>QTRAN43</sys_updated_by>
+        <sys_updated_on>2022-07-22 04:43:57</sys_updated_on>
+        <user_id display_value="Quoc Tran Kim Hoang">da0d7e21dbaff810411fc8da0b9619a1</user_id>
+    </sys_report_users_groups>
+</record_update>
