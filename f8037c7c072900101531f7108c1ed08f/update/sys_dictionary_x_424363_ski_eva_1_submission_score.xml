@@ -3,7 +3,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -56,9 +56,9 @@
         <sys_id>a3f299fc07a900101531f7108c1ed0aa</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Score</sys_name>
-        <sys_package display_value="Skill Evaluation 1" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Skill Evaluation 1">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_dictionary_x_424363_ski_eva_1_submission_score</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2019-12-04 03:23:36</sys_updated_on>
