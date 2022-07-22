@@ -25,6 +25,7 @@
             <language>en</language>
             <name>x_424363_ski_eva_1_skill_assessment</name>
             <sequence>1</sequence>
+            <synonyms/>
             <sys_created_by>dnguyen80</sys_created_by>
             <sys_created_on>2020-12-10 05:54:27</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -44,6 +45,7 @@
             <language>en</language>
             <name>x_424363_ski_eva_1_skill_assessment</name>
             <sequence>2</sequence>
+            <synonyms/>
             <sys_created_by>dnguyen80</sys_created_by>
             <sys_created_on>2020-12-10 05:54:45</sys_created_on>
             <sys_domain>global</sys_domain>
