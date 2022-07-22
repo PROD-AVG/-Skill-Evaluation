@@ -17,7 +17,7 @@
         <sys_updated_by>dnguyen260</sys_updated_by>
         <sys_updated_on>2020-03-17 02:49:17</sys_updated_on>
         <table>x_424363_ski_eva_1_cert_acquisition</table>
-        <ui_policy display_value="[AVG] Non Mandatory Cert Number">d0198dacdb278050d606e04a489619c9</ui_policy>
+        <ui_policy display_value="Make non mandatory/readonly Cert Number">d0198dacdb278050d606e04a489619c9</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>
