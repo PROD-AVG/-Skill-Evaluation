@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
-        <active>true</active>
         <before>false</before>
         <description/>
-        <flush_cache>false</flush_cache>
         <name>Valid PROD Data Fix </name>
         <record_for_rollback>false</record_for_rollback>
-        <run_once>true</run_once>
         <script><![CDATA[// force false to all as a full reset activity.
 var gr = new GlideRecord('x_424363_ski_eva_1_submission');
 gr.setValue('valid', false);
