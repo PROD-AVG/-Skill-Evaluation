@@ -17,7 +17,7 @@
         <sys_updated_by>vvuong2</sys_updated_by>
         <sys_updated_on>2020-03-04 07:31:18</sys_updated_on>
         <table>x_424363_ski_eva_1_cert_acquisition</table>
-        <ui_policy display_value="Mandatory Certificate Name ">a574a956dbdb0810d606e04a489619ac</ui_policy>
+        <ui_policy display_value="[AVG] Cert Acquisition Mandatory fields">a574a956dbdb0810d606e04a489619ac</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>
