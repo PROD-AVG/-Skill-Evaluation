@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA DXCV ServiceNow Skil - New Tab">47adad1e97b895507fd7f97e6253af1c</legacy_page>
+        <name>PA DXCV ServiceNow Skil - New Tab</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>QTRAN43</sys_created_by>
+        <sys_created_on>2022-07-22 06:26:49</sys_created_on>
+        <sys_id>cfadad1e97b895507fd7f97e6253af1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA DXCV ServiceNow Skil - New Tab</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_grid_canvas_cfadad1e97b895507fd7f97e6253af1d</sys_update_name>
+        <sys_updated_by>QTRAN43</sys_updated_by>
+        <sys_updated_on>2022-07-22 06:26:49</sys_updated_on>
+    </sys_grid_canvas>
+</record_update>
