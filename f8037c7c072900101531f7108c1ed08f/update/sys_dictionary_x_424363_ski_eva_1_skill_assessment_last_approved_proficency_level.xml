@@ -60,8 +60,8 @@
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_dictionary_x_424363_ski_eva_1_skill_assessment_last_approved_proficency_level</sys_update_name>
-        <sys_updated_by>vnguyen94</sys_updated_by>
-        <sys_updated_on>2020-04-19 06:56:14</sys_updated_on>
+        <sys_updated_by>thoang44</sys_updated_by>
+        <sys_updated_on>2020-05-13 09:45:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
