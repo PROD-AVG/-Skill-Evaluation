@@ -2,9 +2,9 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
-        <aggregation_source/>
+        <aggregation_source>no_override</aggregation_source>
         <allow_data_label_overlap>false</allow_data_label_overlap>
-        <apply_alias>true</apply_alias>
+        <apply_alias>false</apply_alias>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -32,7 +32,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user/>
+        <created_by_user display_value="Khoi Nguyen Minh">b008c975db779c10d606e04a489619c8</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
@@ -47,10 +47,11 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>submission.assigned_to.user_name,submission.assigned_to.name,submission.assigned_to.email,certificate.certificate_name,certification_number,certificate.product_line,certified_date,expired_date</field_list>
-        <filter table="x_424363_ski_eva_1_cert_acquisition">submission.valid=true^submission.state=3<item endquery="false" field="submission.valid" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter table="x_424363_ski_eva_1_cert_acquisition">submission.valid=true^submission.state=3^submission.assigned_to.active=true<item endquery="false" field="submission.valid" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item display_value="3" endquery="false" field="submission.state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="false" field="submission.assigned_to.active" goto="false" newquery="false" operator="=" or="false" value="true"/>
         </filter>
-        <formatting_configuration/>
+        <formatting_configuration>{"table":"x_424363_ski_eva_1_cert_acquisition","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -80,7 +81,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>snc_internal</roles>
+        <roles/>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -114,8 +115,8 @@
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_report_2f4e29b2db49e050d606e04a48961962</sys_update_name>
-        <sys_updated_by>CPHAN20</sys_updated_by>
-        <sys_updated_on>2022-04-25 01:43:44</sys_updated_on>
+        <sys_updated_by>TTRAN314</sys_updated_by>
+        <sys_updated_on>2022-08-01 06:16:14</sys_updated_on>
         <table>x_424363_ski_eva_1_cert_acquisition</table>
         <title>Certificates by Product Line</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

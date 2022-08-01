@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Certificates by Product Line">2f4e29b2db49e050d606e04a48961962</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>TTRAN314</sys_created_by>
+        <sys_created_on>2022-08-01 06:16:14</sys_created_on>
+        <sys_id>a92b056d074d51900eb2f61d7c1ed01d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2f4e29b2db49e050d606e04a48961962</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_report_users_groups_a92b056d074d51900eb2f61d7c1ed01d</sys_update_name>
+        <sys_updated_by>TTRAN314</sys_updated_by>
+        <sys_updated_on>2022-08-01 06:16:14</sys_updated_on>
+        <user_id display_value="Tuan Tran Minh">9fcad44adb816050d606e04a48961913</user_id>
+    </sys_report_users_groups>
+</record_update>
