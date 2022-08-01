@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_source">
+    <sys_report_source action="INSERT_OR_UPDATE">
+        <description/>
+        <display>No Certificate Resources (Certificate Resources)</display>
+        <filter table="x_424363_ski_eva_1_certificate_resources">sub_state=3^sub_valid=true^ca_certificateISEMPTY^ca_submission.assigned_to.active=true<item display_value="3" endquery="false" field="sub_state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="false" field="sub_valid" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="ca_certificate" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="ca_submission.assigned_to.active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        </filter>
+        <name>No Certificate Resources</name>
+        <sys_class_name>sys_report_source</sys_class_name>
+        <sys_created_by>dnguyen260</sys_created_by>
+        <sys_created_on>2020-04-03 08:11:11</sys_created_on>
+        <sys_id>71fa4c04db00dc10d606e04a48961972</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>No Certificate Resources (Certificate Resources)</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_report_source_71fa4c04db00dc10d606e04a48961972</sys_update_name>
+        <sys_updated_by>TTRAN314</sys_updated_by>
+        <sys_updated_on>2022-08-01 06:57:01</sys_updated_on>
+        <table>x_424363_ski_eva_1_certificate_resources</table>
+    </sys_report_source>
+</record_update>
