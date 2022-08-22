@@ -78,7 +78,7 @@ function cancel() {
         //Send notification to PM/COE approvers
 		//Send to PM if state change from Submitted and send to COE if state change from Reviewed
         if (previousState == "1") {
-            gs.eventQueue("x_424363_ski_eva_1.submission.cancel", current, gs.getProperty('x_424363_ski_eva_1.id_group_pm'), comments);
+            gs.eventQueue("x_424363_ski_eva_1.submission.cancel", current, current.assigned_to.manager, comments);
         } else if (previousState == "2") {
             gs.eventQueue("x_424363_ski_eva_1.submission.cancel", current, gs.getProperty('x_424363_ski_eva_1.id_group_coe'), comments);
         }
@@ -95,15 +95,15 @@ function cancel() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7c3c588adb57c410d606e04a489619c1</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>53</sys_mod_count>
         <sys_name>Cancel</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_ui_action_7c3c588adb57c410d606e04a489619c1</sys_update_name>
-        <sys_updated_by>tngo44</sys_updated_by>
-        <sys_updated_on>2020-03-11 06:25:58</sys_updated_on>
+        <sys_updated_by>YHOANG3</sys_updated_by>
+        <sys_updated_on>2022-08-17 10:34:43</sys_updated_on>
         <table>x_424363_ski_eva_1_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
