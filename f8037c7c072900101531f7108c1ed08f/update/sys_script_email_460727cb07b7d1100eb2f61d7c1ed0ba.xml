@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>show_current_skill_evaluation</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+    var submission = new GlideRecord('x_424363_ski_eva_1_submission');
+    submission.addQuery('valid', true);
+    submission.addQuery('state', 3);
+    submission.addQuery('assigned_to', current.sys_id);
+    submission.setLimit(1);
+    submission.query();
+
+    template.print("<table class=\"MsoNormalTable\" style=\"width: 1029px; border-collapse: collapse;\" border=\"0\" width=\"1030\" cellspacing=\"0\" cellpadding=\"0\">");
+    template.print("<tbody>");
+    template.print("<tr style=\"height: 3.9pt;\"><td style=\"width: 84.9375px; border: 1pt solid windowtext; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Product line</span></strong></p></td><td style=\"width: 252.938px; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-image: initial; border-left: none; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Short description</span></strong></p>  </td><td style=\"width: 104.271px; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-image: initial; border-left: none; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Proficiency level</span></strong></p></td></tr>");
+    if (submission.next()) {
+        var skillEva = new GlideRecord('x_424363_ski_eva_1_skill_assessment');
+        skillEva.addQuery('submission', submission.sys_id);
+        skillEva.addQuery('proficiency_level', "!=", '0');
+        skillEva.query();
+
+        while (skillEva.next()) {
+
+            template.print("<tr style=\"height: 15.3pt;\">");
+            template.print("<td style=\"width: 84.9375px; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-image: initial; border-top: none; padding: 0in 5.4pt; height: 15.3pt;\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><span style=\"color: black;\">" + skillEva.skill.product_line.product_line + "</span></p></td>");
+
+            template.print("<td style=\"width: 252.938px; border-top: none; border-left: none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 15.3pt;\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><span style=\"color: black;\">" + skillEva.skill.skill_description + "</span></p></td>");
+
+            template.print("<td style=\"width: 252.938px; border-top: none; border-left: none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 15.3pt;\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><span style=\"color: black;\">" + skillEva.getDisplayValue('proficiency_level') + "</span></p></td>");
+            template.print("</tr>");
+        }
+        template.print("</tbody></table>");
+    }
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>LNGUYEN275</sys_created_by>
+        <sys_created_on>2022-12-21 02:21:47</sys_created_on>
+        <sys_id>460727cb07b7d1100eb2f61d7c1ed0ba</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>show_current_skill_evaluation</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_script_email_460727cb07b7d1100eb2f61d7c1ed0ba</sys_update_name>
+        <sys_updated_by>LNGUYEN275</sys_updated_by>
+        <sys_updated_on>2022-12-26 07:35:52</sys_updated_on>
+    </sys_script_email>
+</record_update>
