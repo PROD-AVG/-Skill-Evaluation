@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_update>false</action_update>
         <active>true</active>
         <advanced_condition/>
@@ -35,9 +35,13 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Hi ${name},</p>
-<p>It has been 3 months since your last skill evaluation updated, please update your skill self-assessment and acquired certificates.</p>
-<p>Thanks,</p>]]></message_html>
+        <message_html><![CDATA[<p>&nbsp;Hi ${name},</p>
+<p>&nbsp;It has been 3 months since your last skill evaluation updated, please update your skill self-assessment and acquired certificates.</p>
+<p><strong>Your current skill levels:</strong> &nbsp;</p>
+<p>${mail_script:show_current_skill_evaluation}</p>
+<p><strong>Your current certificates:</strong></p>
+<p>${mail_script:show_current_certification}</p>
+<p>&nbsp;Thanks,</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Skill Evaluation Reminder</name>
@@ -59,15 +63,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>956a7a6adb01e050d606e04a489619bd</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Skill Evaluation Reminder</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sysevent_email_action_956a7a6adb01e050d606e04a489619bd</sys_update_name>
-        <sys_updated_by>DDO9</sys_updated_by>
-        <sys_updated_on>2020-12-16 07:17:52</sys_updated_on>
+        <sys_updated_by>LNGUYEN275</sys_updated_by>
+        <sys_updated_on>2022-12-26 07:37:55</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
