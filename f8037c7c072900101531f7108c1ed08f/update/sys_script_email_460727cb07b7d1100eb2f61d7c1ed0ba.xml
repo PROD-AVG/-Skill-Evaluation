@@ -18,7 +18,7 @@
 
     template.print("<table class=\"MsoNormalTable\" style=\"width: 1029px; border-collapse: collapse;\" border=\"0\" width=\"1030\" cellspacing=\"0\" cellpadding=\"0\">");
     template.print("<tbody>");
-    template.print("<tr style=\"height: 3.9pt;\"><td style=\"width: 84.9375px; border: 1pt solid windowtext; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Product line</span></strong></p></td><td style=\"width: 252.938px; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-image: initial; border-left: none; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Short description</span></strong></p>  </td><td style=\"width: 104.271px; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-image: initial; border-left: none; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Proficiency level</span></strong></p></td></tr>");
+    template.print("<tr style=\"height: 3.9pt;\"><td style=\"width: 84.9375px; border: 1pt solid windowtext; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Product line</span></strong></p></td><td style=\"width: 252.938px; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-image: initial; border-left: none; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Skill description</span></strong></p>  </td><td style=\"width: 104.271px; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-image: initial; border-left: none; background: #00b050; padding: 0in 5.4pt; height: 3.9pt;\" nowrap=\"nowrap\"><p style=\"margin: 0in 0in 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;\"><strong><span style=\"color: black;\">Proficiency level</span></strong></p></td></tr>");
     if (submission.next()) {
         var skillEva = new GlideRecord('x_424363_ski_eva_1_skill_assessment');
         skillEva.addQuery('submission', submission.sys_id);
@@ -43,13 +43,13 @@
         <sys_created_by>LNGUYEN275</sys_created_by>
         <sys_created_on>2022-12-21 02:21:47</sys_created_on>
         <sys_id>460727cb07b7d1100eb2f61d7c1ed0ba</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>show_current_skill_evaluation</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_email_460727cb07b7d1100eb2f61d7c1ed0ba</sys_update_name>
-        <sys_updated_by>LNGUYEN275</sys_updated_by>
-        <sys_updated_on>2022-12-27 03:45:43</sys_updated_on>
+        <sys_updated_by>adao6</sys_updated_by>
+        <sys_updated_on>2023-04-10 02:12:16</sys_updated_on>
     </sys_script_email>
 </record_update>
