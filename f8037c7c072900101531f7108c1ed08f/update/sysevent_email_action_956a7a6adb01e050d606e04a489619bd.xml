@@ -42,7 +42,7 @@
 <p><strong>Your current certificates:</strong></p>
 <p>${mail_script:show_current_certification}</p>
 <p>&nbsp;</p>
-<p>&nbsp;Thanks,</p>]]></message_html>
+<p><span dir="ltr">Kind regards</span>,</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Skill Evaluation Reminder</name>
@@ -64,15 +64,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>956a7a6adb01e050d606e04a489619bd</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Skill Evaluation Reminder</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sysevent_email_action_956a7a6adb01e050d606e04a489619bd</sys_update_name>
-        <sys_updated_by>LNGUYEN275</sys_updated_by>
-        <sys_updated_on>2022-12-27 04:20:05</sys_updated_on>
+        <sys_updated_by>adao6</sys_updated_by>
+        <sys_updated_on>2023-04-10 02:10:35</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
