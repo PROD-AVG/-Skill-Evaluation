@@ -2,7 +2,7 @@
     <sysevent_email_action action="INSERT_OR_UPDATE">
         <action_insert>false</action_insert>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
@@ -67,15 +67,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6f3f2b92db8bc490d606e04a48961981</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Submission approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sysevent_email_action_6f3f2b92db8bc490d606e04a48961981</sys_update_name>
-        <sys_updated_by>dnguyen260</sys_updated_by>
-        <sys_updated_on>2020-03-24 04:44:16</sys_updated_on>
+        <sys_updated_by>kphan23</sys_updated_by>
+        <sys_updated_on>2023-05-09 12:47:12</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
