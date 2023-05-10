@@ -39,14 +39,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p><strong>Hi ${assigned_to.name},</strong></p>
-<p>Recently you created new submission ${number}, details below: </p>
-<p><strong>Description:</strong> ${description}</p>
-<p><strong>Requested for: </strong>${assigned_to.name}</p>
-<p>Please fill in your skills self-assessment and acquired certificates, then submit for review.</p>
-<p>Many thanks.</p>
-<p><strong>Click here to view the record:</strong> ${URI_REF}</p>
-<div id="eJOY__extension_root" style="all: unset;">&nbsp;</div>]]></message_html>
+        <message_html/>
         <message_list/>
         <message_text/>
         <name>Submission created</name>
@@ -60,7 +53,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Skill Evaluation Submission ${number} is now submitted by you</subject>
+        <subject/>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>htruong20</sys_created_by>
@@ -68,17 +61,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>07bbab5edb4bc490d606e04a48961923</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Submission created</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sysevent_email_action_07bbab5edb4bc490d606e04a48961923</sys_update_name>
-        <sys_updated_by>dnguyen260</sys_updated_by>
-        <sys_updated_on>2020-03-24 04:52:06</sys_updated_on>
+        <sys_updated_by>kphan23</sys_updated_by>
+        <sys_updated_on>2023-05-03 12:17:17</sys_updated_on>
         <sys_version>2</sys_version>
-        <template/>
+        <template display_value="I have no clue what Im doing">b21ae68207e62d100eb2f61d7c1ed0c9</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
