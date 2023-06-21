@@ -15,7 +15,7 @@
         <name>x_424363_ski_eva_1_submission</name>
         <order>52</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>stateCONTAINSjavascript:(new x_424363_ski_eva_1.FilterUtil()).stateForManagerOrCOE()</query>
+        <query>stateCONTAINSjavascript:(new x_424363_ski_eva_1.FilterUtil()).stateForManagerOrCOE()^assigned_to.manager=javascript: gs.getUserID();</query>
         <report/>
         <roles>x_424363_ski_eva_1.se_admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -24,17 +24,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>18e919f407e900101531f7108c1ed0db</sys_id>
-        <sys_mod_count>22</sys_mod_count>
-        <sys_name>Awaiting Approval</sys_name>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Awaiting your approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_app_module_18e919f407e900101531f7108c1ed0db</sys_update_name>
-        <sys_updated_by>THOANG44</sys_updated_by>
-        <sys_updated_on>2020-12-11 06:41:22</sys_updated_on>
+        <sys_updated_by>TVU70</sys_updated_by>
+        <sys_updated_on>2023-06-19 11:42:41</sys_updated_on>
         <timeline_page/>
-        <title>Awaiting Approval</title>
+        <title>Awaiting your approval</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
