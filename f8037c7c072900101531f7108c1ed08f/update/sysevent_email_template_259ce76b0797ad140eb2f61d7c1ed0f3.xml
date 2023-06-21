@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_424363_ski_eva_1_submission</collection>
+        <email_layout display_value="Avenger Branded - Simple notification">4503b682076a2d100eb2f61d7c1ed0dc</email_layout>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text/>
+        <name>Skill submission has been canceled</name>
+        <sms_alternate/>
+        <subject>Submission ${number} for ${assigned_to} is now Cancelled</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>kphan23</sys_created_by>
+        <sys_created_on>2023-06-14 15:51:06</sys_created_on>
+        <sys_id>259ce76b0797ad140eb2f61d7c1ed0f3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Skill submission has been canceled</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sysevent_email_template_259ce76b0797ad140eb2f61d7c1ed0f3</sys_update_name>
+        <sys_updated_by>kphan23</sys_updated_by>
+        <sys_updated_on>2023-06-14 16:00:15</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>
