@@ -8,12 +8,12 @@
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-14 09:29:00</sys_created_on>
-            <sys_id>d9694963db005c50d606e04a489619ff</sys_id>
+            <sys_created_by>HNGUYEN419</sys_created_by>
+            <sys_created_on>2023-07-03 15:29:14</sys_created_on>
+            <sys_id>96ef1dbd07fb65100eb2f61d7c1ed0cc</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-14 09:29:00</sys_updated_on>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-07-03 15:29:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -23,12 +23,12 @@
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-14 09:29:00</sys_created_on>
-            <sys_id>51698963db005c50d606e04a48961900</sys_id>
+            <sys_created_by>HNGUYEN419</sys_created_by>
+            <sys_created_on>2023-07-03 15:29:14</sys_created_on>
+            <sys_id>1aef1dbd07fb65100eb2f61d7c1ed0cc</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-14 09:29:00</sys_updated_on>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-07-03 15:29:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -38,12 +38,27 @@
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-14 09:29:00</sys_created_on>
-            <sys_id>d1698963db005c50d606e04a48961900</sys_id>
+            <sys_created_by>HNGUYEN419</sys_created_by>
+            <sys_created_on>2023-07-03 15:29:14</sys_created_on>
+            <sys_id>9aef1dbd07fb65100eb2f61d7c1ed0cc</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-14 09:29:00</sys_updated_on>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-07-03 15:29:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>skill_details</element>
+            <list_id display_value="x_424363_ski_eva_1_skill" element="NULL" name="x_424363_ski_eva_1_skill" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1680dc772f4384100e5f49e72799b6f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>HNGUYEN419</sys_created_by>
+            <sys_created_on>2023-07-03 15:29:14</sys_created_on>
+            <sys_id>1eef1dbd07fb65100eb2f61d7c1ed0cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-07-03 15:29:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -51,14 +66,14 @@
             <list_id display_value="x_424363_ski_eva_1_skill" element="NULL" name="x_424363_ski_eva_1_skill" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1680dc772f4384100e5f49e72799b6f6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <position>3</position>
+            <position>4</position>
             <sum>false</sum>
-            <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-14 09:29:00</sys_created_on>
-            <sys_id>55698963db005c50d606e04a48961900</sys_id>
+            <sys_created_by>HNGUYEN419</sys_created_by>
+            <sys_created_on>2023-07-03 15:29:14</sys_created_on>
+            <sys_id>9eef1dbd07fb65100eb2f61d7c1ed0cc</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-14 09:29:00</sys_updated_on>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-07-03 15:29:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -66,14 +81,14 @@
             <list_id display_value="x_424363_ski_eva_1_skill" element="NULL" name="x_424363_ski_eva_1_skill" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1680dc772f4384100e5f49e72799b6f6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <position>4</position>
+            <position>5</position>
             <sum>false</sum>
-            <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-14 09:29:00</sys_created_on>
-            <sys_id>d5698963db005c50d606e04a48961900</sys_id>
+            <sys_created_by>HNGUYEN419</sys_created_by>
+            <sys_created_on>2023-07-03 15:29:14</sys_created_on>
+            <sys_id>12ef1dbd07fb65100eb2f61d7c1ed0cd</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-14 09:29:00</sys_updated_on>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-07-03 15:29:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -81,14 +96,14 @@
             <list_id display_value="x_424363_ski_eva_1_skill" element="NULL" name="x_424363_ski_eva_1_skill" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1680dc772f4384100e5f49e72799b6f6</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <position>5</position>
+            <position>6</position>
             <sum>false</sum>
-            <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-14 09:29:00</sys_created_on>
-            <sys_id>59698963db005c50d606e04a48961900</sys_id>
+            <sys_created_by>HNGUYEN419</sys_created_by>
+            <sys_created_on>2023-07-03 15:29:14</sys_created_on>
+            <sys_id>92ef1dbd07fb65100eb2f61d7c1ed0cd</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-14 09:29:00</sys_updated_on>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-07-03 15:29:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -101,8 +116,8 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>dnguyen260</sys_created_by>
-            <sys_created_on>2020-04-14 09:29:00</sys_created_on>
+            <sys_created_by>HNGUYEN419</sys_created_by>
+            <sys_created_on>2023-07-03 15:29:14</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1680dc772f4384100e5f49e72799b6f6</sys_id>
@@ -112,8 +127,8 @@
             <sys_policy/>
             <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
             <sys_update_name>sys_ui_list_x_424363_ski_eva_1_skill_null</sys_update_name>
-            <sys_updated_by>dnguyen260</sys_updated_by>
-            <sys_updated_on>2020-04-14 09:29:00</sys_updated_on>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-07-03 15:29:14</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
