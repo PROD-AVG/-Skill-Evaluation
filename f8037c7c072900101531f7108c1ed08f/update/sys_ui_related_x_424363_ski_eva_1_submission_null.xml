@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_related sys_domain="global" table="x_424363_ski_eva_1_submission" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter table="x_424363_ski_eva_1_skill_assessment.submission">proficiency_level!=0^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-            </filter>
+            <filter/>
             <list_id display_value="Submission - Default view" name="x_424363_ski_eva_1_submission" related_list="NULL" sys_domain="global" view="Default view">2f985c1307a100101531f7108c1ed025</list_id>
             <order_by/>
             <position>0</position>
@@ -11,12 +10,12 @@
             <sys_created_by>thoang44</sys_created_by>
             <sys_created_on>2020-07-07 08:12:18</sys_created_on>
             <sys_id>a06dd9e6dbb55850d606e04a48961955</sys_id>
-            <sys_mod_count>8</sys_mod_count>
-            <sys_updated_by>dnguyen322</sys_updated_by>
-            <sys_updated_on>2023-04-24 09:18:29</sys_updated_on>
+            <sys_mod_count>13</sys_mod_count>
+            <sys_updated_by>HNGUYEN419</sys_updated_by>
+            <sys_updated_on>2023-08-03 09:51:19</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
+            <filter table="x_424363_ski_eva_1_cert_acquisition.submission">statusIN2,1</filter>
             <list_id display_value="Submission - Default view" name="x_424363_ski_eva_1_submission" related_list="NULL" sys_domain="global" view="Default view">2f985c1307a100101531f7108c1ed025</list_id>
             <order_by/>
             <position>1</position>
@@ -25,9 +24,9 @@
             <sys_created_by>thoang44</sys_created_by>
             <sys_created_on>2020-07-07 08:12:18</sys_created_on>
             <sys_id>286dd9e6dbb55850d606e04a48961955</sys_id>
-            <sys_mod_count>11</sys_mod_count>
-            <sys_updated_by>dnguyen322</sys_updated_by>
-            <sys_updated_on>2023-04-24 09:16:33</sys_updated_on>
+            <sys_mod_count>12</sys_mod_count>
+            <sys_updated_by>NVY</sys_updated_by>
+            <sys_updated_on>2023-06-13 16:48:00</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
