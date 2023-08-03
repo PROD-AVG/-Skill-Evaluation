@@ -4,7 +4,9 @@
         <application display_value="Skill Evaluation">1154787c072900101531f7108c1ed070</application>
         <assessment/>
         <device_type/>
-        <filter/>
+        <filter table="x_424363_ski_eva_1_submission">numberINjavascript:new x_424363_ski_eva_1.FilterUtil().stateForManagerOrCOE()^EQ<item endquery="false" field="number" goto="false" newquery="false" operator="IN" or="false" value="javascript:new x_424363_ski_eva_1.FilterUtil().stateForManagerOrCOE()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint/>
         <homepage/>
         <image/>
@@ -15,7 +17,7 @@
         <name>x_424363_ski_eva_1_submission</name>
         <order>52</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>stateCONTAINSjavascript:(new x_424363_ski_eva_1.FilterUtil()).stateForManagerOrCOE()</query>
+        <query/>
         <report/>
         <roles>x_424363_ski_eva_1.se_admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -24,15 +26,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>18e919f407e900101531f7108c1ed0db</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>Awaiting your approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_app_module_18e919f407e900101531f7108c1ed0db</sys_update_name>
-        <sys_updated_by>TVU70</sys_updated_by>
-        <sys_updated_on>2023-06-20 12:58:10</sys_updated_on>
+        <sys_updated_by>HNGUYEN419</sys_updated_by>
+        <sys_updated_on>2023-07-04 07:03:34</sys_updated_on>
         <timeline_page/>
         <title>Awaiting your approval</title>
         <uncancelable>false</uncancelable>
