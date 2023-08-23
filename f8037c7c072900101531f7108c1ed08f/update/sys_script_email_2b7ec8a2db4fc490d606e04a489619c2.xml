@@ -3,89 +3,101 @@
         <name>submission.approved</name>
         <new_lines_to_html>false</new_lines_to_html>
         <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
-											/* Optional EmailOutbound */
-											email, /* Optional GlideRecord */ email_action,
-											/* Optional GlideRecord */
-											event) {	
-	/*Get list of Skill Assessment is rejected*/
-	var skill_reject = '';
-	var gr_lst_skill_assess = new GlideRecord('x_424363_ski_eva_1_skill_assessment');
-	gr_lst_skill_assess.addQuery('submission', current.sys_id);	
-	gr_lst_skill_assess.addQuery('approve', '0');
-	gr_lst_skill_assess.query();
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+    /*Get list of Skill Assessment is rejected*/
+    var skill_reject = _getRejectedSkillAssessments();
 
-	skill_reject += '<div>There are some Skill Assessment is rejected as below:</div><br/>';
-	while(gr_lst_skill_assess.next()){
-		var gr_skill = gr_lst_skill_assess.skill.getRefRecord();
-		if (gr_skill.isValidRecord())					{
-			skill_reject += '<div><li>' + gr_skill.getValue('skill_description') + '</div><br/>';
-		}				
-	}
-	// Pending, wait for next sprint
-	//Get list of Cert Acquisition is rejected
-	//	var cert_reject = '';
-	// 	var gr_lst_cert_Acq = new GlideRecord('x_424363_ski_eva_1_cert_acquisition');
-	// 	gr_lst_skill_assess.addQuery('submission', current.sys_id);
-	// 	gr_lst_skill_assess.addQuery('status', '3');
-	// 	gr_lst_skill_assess.addQuery('approve', '0');
-	// 	gr_lst_skill_assess.query();
+    // Pending, wait for next sprint
+    //Get list of Cert Acquisition is rejected
+    //	var cert_reject = '';
+    // 	var gr_lst_cert_Acq = new GlideRecord('x_424363_ski_eva_1_cert_acquisition');
+    // 	gr_lst_skill_assess.addQuery('submission', current.sys_id);
+    // 	gr_lst_skill_assess.addQuery('status', '3');
+    // 	gr_lst_skill_assess.addQuery('approve', '0');
+    // 	gr_lst_skill_assess.query();
 
-	// 	cert_reject += '<div>There are some Cert Acquisition is rejected as below:</div><br/>';
-	// 	while(gr_lst_skill_assess.next())
-	// 			{
-	// 				var gr_cert = gr_lst_skill_assess.certificate.getRefRecord();
-	// 				if (gr_cert.isValidRecord())
-	// 					{
-	// 						cert_reject += '<div><li>' + gr_cert.getValue('certificate_name') + '</div><br/>';
-	// 					}				
-	// 			}
+    // 	cert_reject += '<div>There are some Cert Acquisition is rejected as below:</div><br/>';
+    // 	while(gr_lst_skill_assess.next())
+    // 			{
+    // 				var gr_cert = gr_lst_skill_assess.certificate.getRefRecord();
+    // 				if (gr_cert.isValidRecord())
+    // 					{
+    // 						cert_reject += '<div><li>' + gr_cert.getValue('certificate_name') + '</div><br/>';
+    // 					}				
+    // 			}
 
-	if (current.state == '2') {
-		email.setSubject('Submission ' + current.number + ' is now reviewed and approved');
+    if (current.state == '2') {
+        email.setSubject('Submission ' + current.number + ' is now reviewed and approved');
 
-		template.print('<div><strong>Hi ${assigned_to.name},</strong></div><br/>');
-		template.print('<div>Your Skill Submission ${number} is now reviewed and approved by '+event.parm2+', details below:</div><br/>');
+        template.print('<div><strong>Hi ${assigned_to.name},</strong></div><br/>');
+        template.print('<div>Your Skill Submission ${number} is now reviewed and approved by ' + event.parm2 + ', details below:</div><br/>');
 
-		template.print('<div><strong>Description:</strong> ${description}</div><br/>');
-		template.print('<div><strong>Opened by:</strong> ${assigned_to.name}</div><br/>');
-		template.print('<div><strong>Approved by:</strong> '+event.parm2+' </div><br/>');
+        template.print('<div><strong>Description:</strong> ${description}</div><br/>');
+        template.print('<div><strong>Opened by:</strong> ${assigned_to.name}</div><br/>');
+        template.print('<div><strong>Approved by:</strong> ' + event.parm2 + ' </div><br/>');
 
-		template.print(skill_reject);
-		//template.print(cert_reject);
+        if (skill_reject != '') template.print(skill_reject);
+        //template.print(cert_reject);
 
-		template.print('<div><strong>CoE approval is required in order to complete a Skill Evaluation, please wait until your CoE approve your request.</strong></div><br/>');
-		template.print('<div>Any concerns or questions, should be revert back to your PM or CoE, Many thanks.</div><br/>');
-		template.print('<div><strong>Click here to view the record:</strong> ${URI_REF}</div><br/>');
-	} else {
-		email.setSubject('Skill Evaluation Submission ' + current.number + ' is now approved and completed');
+        template.print('<div><strong>CoE approval is required in order to complete a Skill Evaluation, please wait until your CoE approve your request.</strong></div><br/>');
+        template.print('<div>Any concerns or questions, should be revert back to your PM or CoE, Many thanks.</div><br/>');
+        template.print('<div><strong>Click here to view the record:</strong> ${URI_REF}</div><br/>');
+    } else {
+        email.setSubject('Skill Evaluation Submission ' + current.number + ' is now approved and completed');
 
-		template.print('<div><strong>Hi ${assigned_to.name},</strong></div><br/>');
-		template.print('<div>Your Skill Submission ${number} is now approved by '+ event.parm2+ ' and completed, details below:</div><br/>');
+        template.print('<div><strong>Hi ${assigned_to.name},</strong></div><br/>');
+        template.print('<div>Your Skill Submission ${number} is now approved by ' + event.parm2 + ' and completed, details below:</div><br/>');
 
-		template.print('<div><strong>Description:</strong> ${description}</div><br/>');
-		template.print('<div><strong>Opened by:</strong> ${assigned_to.name}</div><br/>');
-		template.print('<div><strong>Approved by:</strong> '+event.parm2+'</div><br/>');
+        template.print('<div><strong>Description:</strong> ${description}</div><br/>');
+        template.print('<div><strong>Opened by:</strong> ${assigned_to.name}</div><br/>');
+        template.print('<div><strong>Approved by:</strong> ' + event.parm2 + '</div><br/>');
 
-		template.print(skill_reject);
-		//template.print(cert_reject);
+        if (skill_reject != '') template.print(skill_reject);
+        //template.print(cert_reject);
 
-		template.print('<div>Any concerns or questions should be revert back to your PM/CoE for details.</div><br/>');
-		template.print('<div>Many thank.</div><br/>');
-		template.print('<div><strong>Click here to view the record:</strong> ${URI_REF}</div><br/>');
-	}
+        template.print('<div>Any concerns or questions should be revert back to your PM/CoE for details.</div><br/>');
+        template.print('<div>Many thank.</div><br/>');
+        template.print('<div><strong>Click here to view the record:</strong> ${URI_REF}</div><br/>');
+    }
+
+    function _getRejectedSkillAssessments() {
+		var skill_reject = '';
+		
+        var gr_lst_skill_assess = new GlideRecord('x_424363_ski_eva_1_skill_assessment');
+        gr_lst_skill_assess.addQuery('submission', current.sys_id);
+        gr_lst_skill_assess.addQuery('approve', '0');
+        gr_lst_skill_assess.query();
+
+        if (gr_lst_skill_assess.hasNext()) {
+            skill_reject += '<div>There are some Skill Assessments is rejected as below:</div>';
+            skill_reject += '<ul>';
+
+            while (gr_lst_skill_assess.next()) {
+                var gr_skill = gr_lst_skill_assess.skill.getRefRecord();
+                if (gr_skill.isValidRecord()) {
+                    skill_reject += '<li>' + gr_skill.getValue('skill_description') + '</li>';
+                }
+            }
+            skill_reject += '</ul>';
+        }
+		return skill_reject;
+    }
 
 })(current, template, email, email_action, event);]]></script>
         <sys_class_name>sys_script_email</sys_class_name>
         <sys_created_by>htruong20</sys_created_by>
         <sys_created_on>2020-02-21 09:34:57</sys_created_on>
         <sys_id>2b7ec8a2db4fc490d606e04a489619c2</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>submission.approved</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_script_email_2b7ec8a2db4fc490d606e04a489619c2</sys_update_name>
-        <sys_updated_by>THOANG44</sys_updated_by>
-        <sys_updated_on>2020-12-17 06:54:12</sys_updated_on>
+        <sys_updated_by>QDO20</sys_updated_by>
+        <sys_updated_on>2023-08-14 09:47:51</sys_updated_on>
     </sys_script_email>
 </record_update>
