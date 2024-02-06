@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_source">
     <sys_report_source action="INSERT_OR_UPDATE">
         <description/>
-        <display>No Certificate Resources (Certificate Resources)</display>
-        <filter table="x_424363_ski_eva_1_certificate_resources">sub_state=3^sub_valid=true^ca_certificateISEMPTY^ca_submission.assigned_to.active=true<item display_value="3" endquery="false" field="sub_state" goto="false" newquery="false" operator="=" or="false" value="3"/>
-            <item endquery="false" field="sub_valid" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="false" field="ca_certificate" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
-            <item endquery="false" field="ca_submission.assigned_to.active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-        </filter>
+        <display>No Certificate Resources (label)</display>
+        <filter table="x_424363_ski_eva_1_certificate_resources">sub_state=3^sub_valid=true^ca_certificateISEMPTY^ca_submission.assigned_to.active=true</filter>
         <name>No Certificate Resources</name>
         <sys_class_name>sys_report_source</sys_class_name>
         <sys_created_by>dnguyen260</sys_created_by>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">f8ad51bb9757cd507fd7f97e6253afcc</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>QTRAN43</sys_created_by>
+        <sys_created_on>2022-05-13 07:33:27</sys_created_on>
+        <sys_id>b0ad51bb9757cd507fd7f97e6253afcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f8ad51bb9757cd507fd7f97e6253afcc</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_report_users_groups_b0ad51bb9757cd507fd7f97e6253afcd</sys_update_name>
+        <sys_updated_by>QTRAN43</sys_updated_by>
+        <sys_updated_on>2022-05-13 07:33:27</sys_updated_on>
+        <user_id display_value="Quoc Tran Kim Hoang">da0d7e21dbaff810411fc8da0b9619a1</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</application>
+        <file_path/>
+        <instance_id>af36c45ddb2e1fc03353f22ebf961932</instance_id>
+        <instance_name>dev60781</instance_name>
+        <name>sys_report_users_groups_b0ad51bb9757cd507fd7f97e6253afcd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">f8ad51bb9757cd507fd7f97e6253afcc</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>QTRAN43</sys_created_by><sys_created_on>2022-05-13 07:33:27</sys_created_on><sys_id>b0ad51bb9757cd507fd7f97e6253afcd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>f8ad51bb9757cd507fd7f97e6253afcc</sys_name><sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package><sys_policy/><sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope><sys_update_name>sys_report_users_groups_b0ad51bb9757cd507fd7f97e6253afcd</sys_update_name><sys_updated_by>QTRAN43</sys_updated_by><sys_updated_on>2022-05-13 07:33:27</sys_updated_on><user_id display_value="Quoc Tran Kim Hoang">da0d7e21dbaff810411fc8da0b9619a1</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>641420063</payload_hash>
+        <record_name>f8ad51bb9757cd507fd7f97e6253afcc</record_name>
+        <reverted_from/>
+        <source>2c98b13bdbe700505a2ff36f2996191c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>QTRAN43</sys_created_by>
+        <sys_created_on>2022-05-13 07:33:27</sys_created_on>
+        <sys_id>74ad51bb9757cd507fd7f97e6253afcf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>180bc5634a40000001</sys_recorded_at>
+        <sys_updated_by>QTRAN43</sys_updated_by>
+        <sys_updated_on>2022-08-11 14:55:09</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>7cad51bbf957cd509f6a94878bd707ce</update_guid>
+        <update_guid_history>7cad51bbf957cd509f6a94878bd707ce:641420063</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>QTRAN43</sys_created_by>
+        <sys_created_on>2022-08-11 14:52:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>19398be6ec4346b08847f71a61157900</sys_id>
+        <sys_metadata>b0ad51bb9757cd507fd7f97e6253afcd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f8ad51bb9757cd507fd7f97e6253afcc</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_scope_delete display_value="">bd84fb5ed38646699a5783f3eddfd7b9</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_b0ad51bb9757cd507fd7f97e6253afcd</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_b0ad51bb9757cd507fd7f97e6253afcd">74ad51bb9757cd507fd7f97e6253afcf</sys_update_version>
+        <sys_updated_by>QTRAN43</sys_updated_by>
+        <sys_updated_on>2022-08-11 14:52:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

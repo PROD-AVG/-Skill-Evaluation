@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">2f4e29b2db49e050d606e04a48961962</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>knguyen234</sys_created_by>
+        <sys_created_on>2020-12-16 17:28:46</sys_created_on>
+        <sys_id>a34e29b2db49e050d606e04a48961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2f4e29b2db49e050d606e04a48961962</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_report_users_groups_a34e29b2db49e050d606e04a48961963</sys_update_name>
+        <sys_updated_by>knguyen234</sys_updated_by>
+        <sys_updated_on>2020-12-16 17:28:46</sys_updated_on>
+        <user_id display_value="Khoi Nguyen Minh">b008c975db779c10d606e04a489619c8</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</application>
+        <file_path/>
+        <instance_id>af36c45ddb2e1fc03353f22ebf961932</instance_id>
+        <instance_name>dev60781</instance_name>
+        <name>sys_report_users_groups_a34e29b2db49e050d606e04a48961963</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">2f4e29b2db49e050d606e04a48961962</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>knguyen234</sys_created_by><sys_created_on>2020-12-16 17:28:46</sys_created_on><sys_id>a34e29b2db49e050d606e04a48961963</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2f4e29b2db49e050d606e04a48961962</sys_name><sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package><sys_policy/><sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope><sys_update_name>sys_report_users_groups_a34e29b2db49e050d606e04a48961963</sys_update_name><sys_updated_by>knguyen234</sys_updated_by><sys_updated_on>2020-12-16 17:28:46</sys_updated_on><user_id display_value="Khoi Nguyen Minh">b008c975db779c10d606e04a489619c8</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>-213004135</payload_hash>
+        <record_name>2f4e29b2db49e050d606e04a48961962</record_name>
+        <reverted_from/>
+        <source>63787311dbede4905a2ff36f2996190c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>THOANG44</sys_created_by>
+        <sys_created_on>2021-01-06 08:13:13</sys_created_on>
+        <sys_id>1288f311dbede4905a2ff36f29961942</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>176d6c1cbd40000001</sys_recorded_at>
+        <sys_updated_by>THOANG44</sys_updated_by>
+        <sys_updated_on>2021-01-06 08:13:18</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>a74e29b2a849e050c25042c1f1aea664</update_guid>
+        <update_guid_history>a74e29b2a849e050c25042c1f1aea664:-213004135</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>SVO4</sys_created_by>
+        <sys_created_on>2021-03-21 18:44:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>107e04e04fcb481e8b001793122f2c19</sys_id>
+        <sys_metadata>a34e29b2db49e050d606e04a48961963</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2f4e29b2db49e050d606e04a48961962</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_parent display_value="Certificates by Product Line">2f4e29b2db49e050d606e04a48961962</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_scope_delete display_value="">bd84fb5ed38646699a5783f3eddfd7b9</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_a34e29b2db49e050d606e04a48961963</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_a34e29b2db49e050d606e04a48961963">1288f311dbede4905a2ff36f29961942</sys_update_version>
+        <sys_updated_by>SVO4</sys_updated_by>
+        <sys_updated_on>2021-03-21 18:44:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

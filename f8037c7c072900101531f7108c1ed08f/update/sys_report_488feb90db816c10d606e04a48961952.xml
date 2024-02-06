@@ -32,7 +32,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="Khoi Nguyen Minh">b008c975db779c10d606e04a489619c8</created_by_user>
+        <created_by_user display_value="Khoi Nguyen Minh">85d8bb0adbf710505a2ff36f299619b8</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
@@ -79,7 +79,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles/>
+        <roles>snc_internal</roles>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>

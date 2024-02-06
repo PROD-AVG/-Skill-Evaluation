@@ -5,6 +5,7 @@
         <advanced>true</advanced>
         <condition/>
         <description>User can create a new submission if they don't have any submission in process</description>
+        <local_or_existing>Local</local_or_existing>
         <name>x_424363_ski_eva_1_submission</name>
         <operation display_value="create">create</operation>
         <script><![CDATA[/*var gr=new GlideRecord("x_424363_ski_eva_1_submission");
@@ -12,6 +13,7 @@
 gr.addEncodedQuery("assigned_toDYNAMIC"+gs.getUserID()+"^stateIN0,2,1");
 gr.query();
 anwser=!gr.hasNext();*/]]></script>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-03 14:26:01</sys_created_on>

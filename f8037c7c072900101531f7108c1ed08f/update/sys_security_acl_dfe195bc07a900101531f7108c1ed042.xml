@@ -7,9 +7,11 @@
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description>User SE can only delete submission when state is "Draft"</description>
+        <local_or_existing>Local</local_or_existing>
         <name>x_424363_ski_eva_1_submission</name>
         <operation display_value="delete">delete</operation>
         <script/>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-03 14:26:02</sys_created_on>

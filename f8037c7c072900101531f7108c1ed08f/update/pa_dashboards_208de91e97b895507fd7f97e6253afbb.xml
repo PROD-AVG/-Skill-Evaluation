@@ -11,9 +11,12 @@
         <managed_publisher/>
         <name>DXCV ServiceNow Skill Dashboard</name>
         <no_tabs>false</no_tabs>
+        <notification_link_label/>
+        <notification_link_url/>
+        <notification_text/>
         <order/>
         <owner display_value="Quoc Tran Kim Hoang">da0d7e21dbaff810411fc8da0b9619a1</owner>
-        <restrict_to_roles>x_424363_ski_eva_1.se_admin</restrict_to_roles>
+        <restrict_to_roles>x_424363_ski_eva_1.se_admin,x_424363_ski_eva_1.se_user</restrict_to_roles>
         <role_override>true</role_override>
         <roles/>
         <should_migrate_permissions>false</should_migrate_permissions>
@@ -23,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>208de91e97b895507fd7f97e6253afbb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>DXCV ServiceNow Skill Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
@@ -31,7 +34,7 @@
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>pa_dashboards_208de91e97b895507fd7f97e6253afbb</sys_update_name>
         <sys_updated_by>QTRAN43</sys_updated_by>
-        <sys_updated_on>2022-08-02 03:49:48</sys_updated_on>
+        <sys_updated_on>2022-11-11 07:37:22</sys_updated_on>
         <users/>
         <visible_to>2</visible_to>
     </pa_dashboards>

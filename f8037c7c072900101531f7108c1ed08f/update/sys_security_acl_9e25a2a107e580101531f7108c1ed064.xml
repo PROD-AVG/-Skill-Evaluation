@@ -5,12 +5,14 @@
         <advanced>true</advanced>
         <condition/>
         <description>After submit, user cannot edit Skill Assessment's proficiency level</description>
+        <local_or_existing>Local</local_or_existing>
         <name>x_424363_ski_eva_1_skill_assessment.proficiency_level</name>
         <operation display_value="write">write</operation>
         <script><![CDATA[if(current.submission.state == '0' && current.submission.assigned_to == gs.getUserID())
 	answer = true;
 else
 	answer = false;]]></script>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-06 04:25:40</sys_created_on>

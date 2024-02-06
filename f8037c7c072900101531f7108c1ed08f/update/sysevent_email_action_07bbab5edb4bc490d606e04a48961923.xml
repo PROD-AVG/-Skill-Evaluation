@@ -26,6 +26,7 @@
         <digest_template/>
         <digest_text/>
         <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
         <event_name>alm_transfer_order_line_subtask.escalati</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
@@ -71,7 +72,7 @@
         <sys_updated_by>kphan23</sys_updated_by>
         <sys_updated_on>2023-05-03 12:17:17</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="I have no clue what Im doing">b21ae68207e62d100eb2f61d7c1ed0c9</template>
+        <template display_value="Skill submission created template">b21ae68207e62d100eb2f61d7c1ed0c9</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>

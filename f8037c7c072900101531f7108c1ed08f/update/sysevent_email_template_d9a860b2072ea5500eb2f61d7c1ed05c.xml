@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
     <sysevent_email_template action="INSERT_OR_UPDATE">
         <collection>x_424363_ski_eva_1_submission</collection>
-        <email_layout display_value="Avenger Branded - Simple notificatoin">4503b682076a2d100eb2f61d7c1ed0dc</email_layout>
+        <email_layout display_value="Avenger Branded - Simple notification">4503b682076a2d100eb2f61d7c1ed0dc</email_layout>
         <message/>
         <message_html/>
         <message_list/>

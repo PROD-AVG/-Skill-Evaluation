@@ -3,7 +3,7 @@
         <description>Proficiency by Product Line</description>
         <display>Proficiency by Product Line (Skill Assessment)</display>
         <filter table="x_424363_ski_eva_1_skill_assessment">proficiency_levelIN1,2,3,4^submission.state=3^skillISNOTEMPTY^submissionISNOTEMPTY^submission.valid=true^submission.assigned_to.active=true<item display_value="1,2,3,4" endquery="false" field="proficiency_level" goto="false" newquery="false" operator="IN" or="false" value="1,2,3,4"/>
-            <item display_value="3" endquery="false" field="submission.state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item display_value="Completed" endquery="false" field="submission.state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item endquery="false" field="skill" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="submission" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="submission.valid" goto="false" newquery="false" operator="=" or="false" value="true"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="73ff0a18dbcc7410b6429db2ca9619bd" extends="sys_import_set_row" label="Question Bank Sheet" max_length="40" name="x_292088_snow_exam_question_banks_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Answer" label="Answer" max_length="40" name="u_answer" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Author" label="Author" max_length="40" name="u_author" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Category" label="Category" max_length="40" name="u_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=N" label="N" max_length="40" name="u_n" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Option 1" label="Option 1" max_length="40" name="u_option_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Option 2" label="Option 2" max_length="40" name="u_option_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Option 3" label="Option 3" max_length="40" name="u_option_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Option 4" label="Option 4" max_length="40" name="u_option_4" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Option 5" label="Option 5" max_length="40" name="u_option_5" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Option 6" label="Option 6" max_length="40" name="u_option_6" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Questions" label="Questions" max_length="40" name="u_questions" type="string"/>
+    </element>
+</database>

@@ -7,9 +7,11 @@
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description>Allow write for records in x_424363_ski_eva_1_product_line, for users with role x_424363_ski_eva_1.se_admin, and if the ACL condition (product_lineSTARTSWITH^EQ) evaluates to true.</description>
+        <local_or_existing>Local</local_or_existing>
         <name>x_424363_ski_eva_1_product_line</name>
         <operation display_value="write">write</operation>
         <script/>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-12-03 12:16:10</sys_created_on>

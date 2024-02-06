@@ -5,9 +5,11 @@
         <advanced>true</advanced>
         <condition/>
         <description>Allow list_edit for certification_number in x_424363_ski_eva_1_cert_acquisition, if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
         <name>x_424363_ski_eva_1_cert_acquisition.certification_number</name>
         <operation display_value="list_edit">54f535270a0a0b8c007c67009ab2bdc0</operation>
         <script><![CDATA[answer = false;]]></script>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>dnguyen260</sys_created_by>
         <sys_created_on>2020-03-17 08:58:04</sys_created_on>

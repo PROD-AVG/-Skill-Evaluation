@@ -16,7 +16,7 @@
         <interval>year</interval>
         <list_ui_view/>
         <report display_value="DXCV ServiceNow Team Experience">54265996977895507fd7f97e6253afc3</report>
-        <report_source display_value="Experienced Employees (Skill Assessment)">3bf77e4cdb94dc50d606e04a4896199b</report_source>
+        <report_source display_value="Experienced Employees (scoped) (Skill Assessment)">3bf77e4cdb94dc50d606e04a4896199b</report_source>
         <sequence>1</sequence>
         <series_name_text>Experienced Employees</series_name_text>
         <set_color>color_palette</set_color>

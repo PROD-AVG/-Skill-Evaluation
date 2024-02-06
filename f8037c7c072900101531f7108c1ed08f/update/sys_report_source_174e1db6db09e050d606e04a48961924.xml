@@ -2,7 +2,7 @@
     <sys_report_source action="INSERT_OR_UPDATE">
         <description/>
         <display>Certificates by Product Line (Cert Acquisition)</display>
-        <filter table="x_424363_ski_eva_1_cert_acquisition">submission.state=3^certificateISNOTEMPTY^submissionISNOTEMPTY^submission.valid=true<item display_value="3" endquery="false" field="submission.state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+        <filter table="x_424363_ski_eva_1_cert_acquisition">submission.state=3^certificateISNOTEMPTY^submissionISNOTEMPTY^submission.valid=true<item display_value="Completed" endquery="false" field="submission.state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item endquery="false" field="certificate" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="submission" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="submission.valid" goto="false" newquery="false" operator="=" or="false" value="true"/>

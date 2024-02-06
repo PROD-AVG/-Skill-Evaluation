@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="934c7478076900101531f7108c1ed004" label="Certificate" max_length="40" name="x_424363_ski_eva_1_certificate" type="collection">
+        <element label="Capability" max_length="32" name="capability" reference="cmdb_ci_business_capability" reference_qual="parent=e31711779757cd507fd7f97e6253af80^EQ" reference_qual_condition="parent=e31711779757cd507fd7f97e6253af80^EQ" type="reference"/>
+        <element label="Certificate abbreviation" max_length="255" name="certificate_abbreviation" type="string"/>
+        <element display="true" label="Certificate name" max_length="255" name="certificate_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Product line" max_length="1024" name="product_line" reference="x_424363_ski_eva_1_product_line" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type of certification" max_length="40" name="type_of_certification" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Mainline" sequence="1" value="Mainline"/>
+                <element inactive_on_update="false" label="Micro" sequence="2" value="Micro"/>
+                <element inactive_on_update="false" label="Suite" sequence="3" value="Suite"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="capability"/>
+        </index>
+        <index name="index2">
+            <element name="product_line"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

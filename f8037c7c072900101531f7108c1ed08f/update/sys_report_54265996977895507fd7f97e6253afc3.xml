@@ -32,7 +32,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="Quoc Tran Kim Hoang">45558349073bb0100eb2f61d7c1ed0be</created_by_user>
+        <created_by_user display_value="Quoc Tran Kim Hoang">da0d7e21dbaff810411fc8da0b9619a1</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
@@ -67,7 +67,7 @@
         <legend_horizontal_alignment>center</legend_horizontal_alignment>
         <legend_items_left_align>false</legend_items_left_align>
         <legend_vertical_alignment>bottom</legend_vertical_alignment>
-        <list_ui_view display_value="Report View" name="report_view">6ca25758db181090d606e04a489619ce</list_ui_view>
+        <list_ui_view display_value="">6ca25758db181090d606e04a489619ce</list_ui_view>
         <location_field/>
         <lower_limit/>
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
@@ -79,7 +79,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles/>
+        <roles>snc_internal</roles>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -90,7 +90,7 @@
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
-        <show_chart_title>always</show_chart_title>
+        <show_chart_title>never</show_chart_title>
         <show_chart_total>false</show_chart_total>
         <show_data_label_position_middle>true</show_data_label_position_middle>
         <show_empty>false</show_empty>
@@ -107,14 +107,14 @@
         <sys_created_by>QTRAN43</sys_created_by>
         <sys_created_on>2022-07-22 04:43:57</sys_created_on>
         <sys_id>54265996977895507fd7f97e6253afc3</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>DXCV ServiceNow Team Experience</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
         <sys_update_name>sys_report_54265996977895507fd7f97e6253afc3</sys_update_name>
-        <sys_updated_by>TLE286</sys_updated_by>
-        <sys_updated_on>2023-06-20 08:57:25</sys_updated_on>
+        <sys_updated_by>QTRAN43</sys_updated_by>
+        <sys_updated_on>2023-07-07 04:05:00</sys_updated_on>
         <table>x_424363_ski_eva_1_skill_assessment</table>
         <title>DXCV ServiceNow Team Experience</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -151,7 +151,7 @@
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_label_tilt>0</y_axis_label_tilt>
         <y_axis_opposite>false</y_axis_opposite>
-        <y_axis_title>Employee Count</y_axis_title>
+        <y_axis_title>Count</y_axis_title>
         <y_axis_title_bold>true</y_axis_title_bold>
         <y_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_title_color>
         <y_axis_title_size>12</y_axis_title_size>

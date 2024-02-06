@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config/>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
         <macroponent display_value="DXCV SN Skill Dashboard">6b8c25da97b895507fd7f97e6253af16</macroponent>
         <macroponent_config/>

@@ -32,7 +32,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="Phong Le Thanh">4494248407d409500eb2f61d7c1ed0d8</created_by_user>
+        <created_by_user display_value="Phong Le Thanh">2034e408dbd0c550411fc8da0b9619ef</created_by_user>
         <custom_chart_size>true</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
@@ -77,8 +77,8 @@
         <page_hdrftr/>
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
-        <report_source display_value="Latest Certificate (Cert Acquisition)">6c1d54c7072e91100eb2f61d7c1ed064</report_source>
-        <roles/>
+        <report_source display_value="">6c1d54c7072e91100eb2f61d7c1ed064</report_source>
+        <roles>snc_internal</roles>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>

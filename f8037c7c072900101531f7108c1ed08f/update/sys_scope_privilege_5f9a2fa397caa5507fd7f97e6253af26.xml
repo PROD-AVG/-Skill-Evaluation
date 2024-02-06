@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>QDANG5</sys_created_by>
+        <sys_created_on>2023-04-13 12:14:43</sys_created_on>
+        <sys_id>5f9a2fa397caa5507fd7f97e6253af26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ReportUtils</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_scope_privilege_5f9a2fa397caa5507fd7f97e6253af26</sys_update_name>
+        <sys_updated_by>QDANG5</sys_updated_by>
+        <sys_updated_on>2023-04-13 12:14:43</sys_updated_on>
+        <target_name>ReportUtils</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

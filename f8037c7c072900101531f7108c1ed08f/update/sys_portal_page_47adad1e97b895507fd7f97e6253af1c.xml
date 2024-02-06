@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2022-08-27 02:10:41">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2024-02-06 05:21:23">
     <sys_portal_page action="INSERT_OR_UPDATE">
         <layout/>
         <order/>
@@ -119,10 +119,10 @@
                         <sys_created_by>QTRAN43</sys_created_by>
                         <sys_created_on>2022-07-22 06:30:50</sys_created_on>
                         <sys_id>8a9e295e97b895507fd7f97e6253af2d</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>QTRAN43</sys_updated_by>
-                        <sys_updated_on>2022-07-22 06:30:50</sys_updated_on>
-                        <value>center</value>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>QDANG5</sys_updated_by>
+                        <sys_updated_on>2024-01-19 06:34:03</sys_updated_on>
+                        <value>left</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>filter_indicator</name>
@@ -189,6 +189,86 @@
                         <sys_updated_by>QTRAN43</sys_updated_by>
                         <sys_updated_on>2022-07-22 06:26:57</sys_updated_on>
                         <value>DXCV SN Experienced Employees</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA DXCV ServiceNow Skil - New Tab">47adad1e97b895507fd7f97e6253af1c</page>
+                <summary>Employee Filter</summary>
+                <sys_created_by>QTRAN43</sys_created_by>
+                <sys_created_on>2023-07-07 03:49:02</sys_created_on>
+                <sys_id>1806a7ba9733a9107fd7f97e6253af4b</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>QTRAN43</sys_updated_by>
+                <sys_updated_on>2023-07-07 03:49:02</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 2023-07-07 10:49:02">1806a7ba9733a9107fd7f97e6253af4b</portal_section>
+                        <sys_created_by>QTRAN43</sys_created_by>
+                        <sys_created_on>2023-07-07 03:49:02</sys_created_on>
+                        <sys_id>1c06a7ba9733a9107fd7f97e6253af4c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>QTRAN43</sys_updated_by>
+                        <sys_updated_on>2023-07-07 03:49:02</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2023-07-07 10:49:02">1806a7ba9733a9107fd7f97e6253af4b</portal_section>
+                        <sys_created_by>QTRAN43</sys_created_by>
+                        <sys_created_on>2023-07-07 03:49:02</sys_created_on>
+                        <sys_id>5806a7ba9733a9107fd7f97e6253af4c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>QTRAN43</sys_updated_by>
+                        <sys_updated_on>2023-07-07 03:49:02</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2023-07-07 10:49:02">1806a7ba9733a9107fd7f97e6253af4b</portal_section>
+                        <sys_created_by>QTRAN43</sys_created_by>
+                        <sys_created_on>2023-07-07 03:49:02</sys_created_on>
+                        <sys_id>9006a7ba9733a9107fd7f97e6253af4d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>QTRAN43</sys_updated_by>
+                        <sys_updated_on>2023-07-07 03:49:02</sys_updated_on>
+                        <value>Employee Filter</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2023-07-07 10:49:02">1806a7ba9733a9107fd7f97e6253af4b</portal_section>
+                        <sys_created_by>QTRAN43</sys_created_by>
+                        <sys_created_on>2023-07-07 03:49:02</sys_created_on>
+                        <sys_id>9c06a7ba9733a9107fd7f97e6253af4b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>QTRAN43</sys_updated_by>
+                        <sys_updated_on>2023-07-07 03:49:02</sys_updated_on>
+                        <value>5ce4637a9733a9107fd7f97e6253afca</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2023-07-07 10:49:02">1806a7ba9733a9107fd7f97e6253af4b</portal_section>
+                        <sys_created_by>QTRAN43</sys_created_by>
+                        <sys_created_on>2023-07-07 03:49:02</sys_created_on>
+                        <sys_id>9c06a7ba9733a9107fd7f97e6253af4d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>QTRAN43</sys_updated_by>
+                        <sys_updated_on>2023-07-07 03:49:02</sys_updated_on>
+                        <value>2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2023-07-07 10:49:02">1806a7ba9733a9107fd7f97e6253af4b</portal_section>
+                        <sys_created_by>QTRAN43</sys_created_by>
+                        <sys_created_on>2023-07-07 03:49:02</sys_created_on>
+                        <sys_id>dc06a7ba9733a9107fd7f97e6253af4c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>QTRAN43</sys_updated_by>
+                        <sys_updated_on>2023-07-07 03:49:02</sys_updated_on>
+                        <value>true</value>
                     </sys_portal_preferences>
                 </related_items_node>
             </sys_portal>

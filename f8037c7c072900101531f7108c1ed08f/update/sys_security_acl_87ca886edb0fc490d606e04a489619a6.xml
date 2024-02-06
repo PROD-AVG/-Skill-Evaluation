@@ -5,11 +5,13 @@
         <advanced>true</advanced>
         <condition/>
         <description>Allow list_edit for records in x_424363_ski_eva_1_submission, if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
         <name>x_424363_ski_eva_1_submission</name>
         <operation display_value="list_edit">54f535270a0a0b8c007c67009ab2bdc0</operation>
         <script><![CDATA[if(gs.getUser().hasRole("x_424363_ski_eva_1.se_user")){
 	answer=false;
 }]]></script>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>tngo44</sys_created_by>
         <sys_created_on>2020-02-21 09:19:13</sys_created_on>

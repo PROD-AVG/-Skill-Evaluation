@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>aaa</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>aaa</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>THOANG44</sys_created_by>
+        <sys_created_on>2020-11-03 05:40:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36cf29b8dbd4a0905a2ff36f299619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>aaa</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_update_name>sys_hub_flow_36cf29b8dbd4a0905a2ff36f299619da</sys_update_name>
+        <sys_updated_by>THOANG44</sys_updated_by>
+        <sys_updated_on>2020-11-03 05:40:20</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=36cf29b8dbd4a0905a2ff36f299619da"/>
+    <sys_variable_value action="DELETE" query="document_key=36cf29b8dbd4a0905a2ff36f299619da"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=36cf29b8dbd4a0905a2ff36f299619da^sys_idNOT IN72cf29b8dbd4a0905a2ff36f299619dd"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>36cf29b8dbd4a0905a2ff36f299619da</id>
+        <name>aaa</name>
+        <sys_created_by>THOANG44</sys_created_by>
+        <sys_created_on>2020-11-03 05:40:20</sys_created_on>
+        <sys_id>72cf29b8dbd4a0905a2ff36f299619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>THOANG44</sys_updated_by>
+        <sys_updated_on>2020-11-03 05:40:20</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</application>
+        <file_path/>
+        <instance_id>af36c45ddb2e1fc03353f22ebf961932</instance_id>
+        <instance_name>dev60781</instance_name>
+        <name>sys_hub_flow_36cf29b8dbd4a0905a2ff36f299619da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><internal_name>aaa</internal_name><label_cache>null</label_cache><latest_snapshot/><master_snapshot/><name>aaa</name><outputs/><remote_trigger_id/><run_as>user</run_as><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>THOANG44</sys_created_by><sys_created_on>2020-11-03 05:40:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>36cf29b8dbd4a0905a2ff36f299619da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>aaa</sys_name><sys_overrides/><sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package><sys_policy/><sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope><sys_update_name>sys_hub_flow_36cf29b8dbd4a0905a2ff36f299619da</sys_update_name><sys_updated_by>THOANG44</sys_updated_by><sys_updated_on>2020-11-03 05:40:20</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=36cf29b8dbd4a0905a2ff36f299619da"/><sys_variable_value action="delete_multiple" query="document_key=36cf29b8dbd4a0905a2ff36f299619da"/><sys_flow_cat_variable_model action="delete_multiple" query="id=36cf29b8dbd4a0905a2ff36f299619da^sys_idNOT IN72cf29b8dbd4a0905a2ff36f299619dd"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>36cf29b8dbd4a0905a2ff36f299619da</id><name>aaa</name><sys_created_by>THOANG44</sys_created_by><sys_created_on>2020-11-03 05:40:20</sys_created_on><sys_id>72cf29b8dbd4a0905a2ff36f299619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>THOANG44</sys_updated_by><sys_updated_on>2020-11-03 05:40:20</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>1621393785</payload_hash>
+        <record_name>aaa</record_name>
+        <reverted_from/>
+        <source>2c98b13bdbe700505a2ff36f2996191c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>THOANG44</sys_created_by>
+        <sys_created_on>2020-11-03 05:40:20</sys_created_on>
+        <sys_id>3acf29b8dbd4a0905a2ff36f299619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1758c9ed3060000001</sys_recorded_at>
+        <sys_updated_by>THOANG44</sys_updated_by>
+        <sys_updated_on>2020-11-03 05:40:20</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>72cf29b884d4a090aaeeb2bd6effe5e1</update_guid>
+        <update_guid_history>72cf29b884d4a090aaeeb2bd6effe5e1:1621393785</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>THOANG44</sys_created_by>
+        <sys_created_on>2020-11-03 05:44:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>0f4493b438fb41baaed896de2d1f0724</sys_id>
+        <sys_metadata>36cf29b8dbd4a0905a2ff36f299619da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>aaa</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_424363_ski_eva_1">f8037c7c072900101531f7108c1ed08f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">f8037c7c072900101531f7108c1ed08f</sys_scope>
+        <sys_scope_delete display_value="">bd84fb5ed38646699a5783f3eddfd7b9</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_36cf29b8dbd4a0905a2ff36f299619da</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_36cf29b8dbd4a0905a2ff36f299619da">3acf29b8dbd4a0905a2ff36f299619e1</sys_update_version>
+        <sys_updated_by>THOANG44</sys_updated_by>
+        <sys_updated_on>2020-11-03 05:44:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
